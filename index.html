@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMINA V2 — Visual Prompt Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="logo">
+      <span class="logo-mark">LUMINA</span>
+      <span class="logo-v">V2</span>
+      <span class="logo-sub">Trình Tạo Prompt Ảnh AI</span>
+    </div>
+    <div class="header-center">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="globalSearch" class="search-input" placeholder="Tìm kiếm tùy chọn..." oninput="handleSearch(this.value)">
+        <button class="search-clear" id="searchClear" onclick="clearSearch()" style="display:none">✕</button>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-sm" onclick="randomizeAll()">⚄ Toàn bộ</button>
+      <button class="btn btn-sm" onclick="randomizeFace()">◎ Khuôn mặt</button>
+      <button class="btn btn-sm" onclick="randomizeOutfit()">✿ Trang phục</button>
+      <button class="btn btn-sm" onclick="randomizeScene()">⌾ Cảnh</button>
+      <button class="btn btn-sm btn-danger" onclick="clearAll()">✕ Xóa</button>
+    </div>
+  </header>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Danh mục</div>
+        <div id="sidebarNav"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Chế độ đặc biệt</div>
+        <div class="nav-item" id="douyinNavItem" onclick="toggleDouyin()">
+          <span class="nav-icon">✦</span>
+          <span>Chế độ Douyin</span>
+          <span id="douyinBadge" class="nav-badge" style="display:none">BẬT</span>
+        </div>
+        <div class="nav-item" onclick="showPanel('favorites')">
+          <span class="nav-icon">★</span>
+          <span>Yêu thích</span>
+          <span id="favCount" class="nav-badge">0</span>
+        </div>
+        <div class="nav-item" onclick="showPanel('history')">
+          <span class="nav-icon">◷</span>
+          <span>Lịch sử Prompt</span>
+          <span id="histCount" class="nav-badge">0</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Thống kê</div>
+        <div class="stat-row"><span>Đã chọn</span><span class="stat-val" id="statSelected">0 / 0</span></div>
+        <div class="stat-row"><span>Độ dài prompt</span><span class="stat-val" id="statLength">0 ký tự</span></div>
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-area" id="mainArea">
+
+      <!-- SEARCH RESULTS -->
+      <div id="searchResults" style="display:none">
+        <div class="section-group">
+          <div class="section-group-header">
+            <span>⌕</span><span>Kết quả tìm kiếm</span>
+            <span id="searchCount" style="margin-left:auto;color:var(--gold3)"></span>
+          </div>
+          <div class="visual-grid" id="searchGrid"></div>
+        </div>
+      </div>
+
+      <!-- DOUYIN BANNER -->
+      <div class="douyin-banner" id="douyinBanner" onclick="toggleDouyin()">
+        <div class="douyin-banner-inner">
+          <div class="douyin-icon">✦</div>
+          <div>
+            <div class="douyin-title">Chế Độ Douyin Beauty</div>
+            <div class="douyin-sub">Thẩm mỹ influencer Trung Quốc · Chụp smartphone thực tế · Phong cách mạng xã hội châu Á</div>
+          </div>
+        </div>
+        <div class="douyin-toggle" id="douyinToggle">Kích hoạt</div>
+      </div>
+
+      <!-- QUALITY SELECTOR -->
+      <div class="quality-section">
+        <div class="quality-label">Mức độ chi tiết Prompt</div>
+        <div class="quality-track" id="qualityTrack"></div>
+      </div>
+
+      <!-- DYNAMIC SECTIONS -->
+      <div id="sectionsContainer"></div>
+
+    </main>
+
+    <!-- RIGHT PANEL: Favorites / History -->
+    <div class="right-panel" id="rightPanel" style="display:none">
+      <div class="right-panel-header">
+        <span id="rightPanelTitle">Yêu thích</span>
+        <button onclick="closePanel()" class="btn btn-xs">✕</button>
+      </div>
+      <div id="rightPanelBody"></div>
+    </div>
+
+  </div><!-- /layout -->
+
+  <!-- OUTPUT BAR -->
+  <div class="output-bar" id="outputBar">
+    <div class="output-tabs" id="outputTabs"></div>
+    <div class="output-body">
+      <div id="promptDisplay" class="prompt-box">— Chọn các tùy chọn để tạo prompt —</div>
+      <div class="output-actions">
+        <button class="btn btn-gold" onclick="copyCurrentTab()">⎘ Sao chép <span id="copyTabLabel">Universal</span></button>
+        <button class="btn btn-sm" onclick="copyFullPackage()">⎘ Gói đầy đủ</button>
+        <button class="btn btn-sm" onclick="saveToHistory()">+ Lưu lịch sử</button>
+        <button class="btn btn-sm" onclick="clearAll()">✕ Đặt lại</button>
+        <span class="char-count" id="charCount">0 ký tự</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /app -->
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- MODAL: Image preview -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()" style="display:none">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-img-wrap"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-info">
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-desc" id="modalDesc"></div>
+    </div>
+    <button class="modal-close" onclick="closeModal()">✕</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
