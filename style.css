@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400;500&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap');
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
@@ -89,7 +89,7 @@
 }
 
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro',sans-serif;overflow-x:hidden;font-size:13px;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;font-size:13px;}
 
 /* ── HEADER ── */
 .header{
@@ -102,7 +102,7 @@ body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro',sans-se
   backdrop-filter:blur(12px);
 }
 .logo{display:flex;align-items:baseline;gap:8px;}
-.logo-mark{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--gold);letter-spacing:.1em;}
+.logo-mark{font-family:'Inter',sans-serif;font-size:20px;font-weight:700;color:var(--gold);letter-spacing:.05em;}
 .logo-v{font-size:10px;color:var(--gold3);border:1px solid var(--gold3);padding:1px 5px;border-radius:2px;letter-spacing:.1em;}
 .logo-sub{font-size:9px;color:var(--text3);letter-spacing:.2em;text-transform:uppercase;}
 .header-center{display:flex;justify-content:center;}
@@ -171,7 +171,7 @@ body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro',sans-se
 .douyin-banner:hover,.douyin-banner.active{border-color:var(--gold2);background:var(--primary-op12);}
 .douyin-banner-inner{display:flex;align-items:center;gap:14px;}
 .douyin-icon{font-size:22px;color:var(--gold);}
-.douyin-title{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:300;color:var(--gold);letter-spacing:.08em;}
+.douyin-title{font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:var(--gold);}
 .douyin-sub{font-size:9px;color:var(--text3);letter-spacing:.1em;margin-top:2px;}
 .douyin-toggle{
   padding:5px 14px;border:1px solid var(--gold);
@@ -328,7 +328,7 @@ body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro',sans-se
 }
 .lens-card:hover{border-color:var(--border2);}
 .lens-card.selected{border-color:var(--gold);background:var(--primary-op05);}
-.lens-mm{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold);font-weight:300;}
+.lens-mm{font-family:'Inter',sans-serif;font-size:16px;color:var(--gold);font-weight:700;}
 .lens-name{font-size:9px;color:var(--text3);letter-spacing:.1em;margin-top:2px;}
 .lens-use{font-size:8px;color:var(--text4);margin-top:3px;}
 .lens-fov{
@@ -439,7 +439,7 @@ body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro',sans-se
 .modal-img-wrap{width:100%;aspect-ratio:4/3;background:var(--bg3);overflow:hidden;}
 .modal-img-wrap img{width:100%;height:100%;object-fit:cover;}
 .modal-info{padding:16px;}
-.modal-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;color:var(--text);margin-bottom:6px;}
+.modal-name{font-family:'Inter',sans-serif;font-size:18px;font-weight:600;color:var(--text);margin-bottom:6px;}
 .modal-desc{font-size:11px;color:var(--text2);line-height:1.7;}
 .modal-close{
   position:absolute;top:10px;right:10px;
