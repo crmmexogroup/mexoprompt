@@ -526,17 +526,17 @@ let state = {
 
 function loadStorage(){
   try {
-    const favs = localStorage.getItem('lumina_favs');
+    const favs = localStorage.getItem('mexo_favs');
     if(favs) state.favorites = JSON.parse(favs);
-    const hist = localStorage.getItem('lumina_history');
+    const hist = localStorage.getItem('mexo_history');
     if(hist) state.history = JSON.parse(hist);
   } catch(e){}
 }
 
 function saveStorage(){
   try {
-    localStorage.setItem('lumina_favs', JSON.stringify(state.favorites));
-    localStorage.setItem('lumina_history', JSON.stringify(state.history));
+    localStorage.setItem('mexo_favs', JSON.stringify(state.favorites));
+    localStorage.setItem('mexo_history', JSON.stringify(state.history));
   } catch(e){}
 }
 
@@ -1195,8 +1195,30 @@ function _randomizeSingle(catId){
 }
 
 // ═══════════════════════════════════════════════════════════════
+// THEME toggling
+// ═══════════════════════════════════════════════════════════════
+
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('mexo_theme', newTheme);
+  updateThemeIcon(newTheme);
+  showToast(newTheme === 'dark' ? '🌙 Đã chuyển sang chế độ Tối' : '☀️ Đã chuyển sang chế độ Sáng');
+}
+
+function updateThemeIcon(theme) {
+  const btn = document.getElementById('themeToggle');
+  if (btn) {
+    btn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+    btn.title = theme === 'dark' ? 'Chuyển sang chế độ Sáng' : 'Chuyển sang chế độ Tối';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════════════════
 
 loadStorage();
 render();
+updateThemeIcon(document.documentElement.getAttribute('data-theme') || 'dark');

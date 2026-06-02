@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUMINA V2 — Visual Prompt Builder</title>
+<title>MEXO V1.1 — Visual Prompt Builder</title>
 <link rel="stylesheet" href="style.css">
+<script>
+  (function() {
+    const savedTheme = localStorage.getItem('mexo_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+</script>
 </head>
 <body>
 
@@ -13,8 +19,8 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="logo">
-      <span class="logo-mark">LUMINA</span>
-      <span class="logo-v">V2</span>
+      <span class="logo-mark">MEXO</span>
+      <span class="logo-v">V1.1</span>
       <span class="logo-sub">Trình Tạo Prompt Ảnh AI</span>
     </div>
     <div class="header-center">
@@ -25,6 +31,7 @@
       </div>
     </div>
     <div class="header-actions">
+      <button class="theme-btn" id="themeToggle" onclick="toggleTheme()" title="Chuyển chế độ Sáng/Tối">☀️</button>
       <button class="btn btn-sm" onclick="randomizeAll()">⚄ Toàn bộ</button>
       <button class="btn btn-sm" onclick="randomizeFace()">◎ Khuôn mặt</button>
       <button class="btn btn-sm" onclick="randomizeOutfit()">✿ Trang phục</button>
