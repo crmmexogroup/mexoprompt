@@ -890,6 +890,85 @@ function chipHTML(item, catId){
 }
 
 // ═══════════════════════════════════════════════════════════════
+// CAROUSEL COMPONENT
+// ═══════════════════════════════════════════════════════════════
+
+function getItemsPerView() {
+  const w = window.innerWidth;
+  if (w <= 600) return 2;
+  if (w <= 900) return 3;
+  return 5;
+}
+
+function makeCarouselHTML(id, itemsHtml, totalItems) {
+  if (!state.carouselPages) state.carouselPages = {};
+  
+  const itemsPerView = getItemsPerView();
+  const maxPage = Math.max(0, Math.ceil(totalItems / itemsPerView) - 1);
+  
+  let activePage = state.carouselPages[id] || 0;
+  if (activePage > maxPage) {
+    activePage = maxPage;
+    state.carouselPages[id] = maxPage;
+  }
+  
+  const showArrows = totalItems > itemsPerView;
+  const prevDisabled = activePage === 0 ? 'disabled' : '';
+  const nextDisabled = activePage === maxPage ? 'disabled' : '';
+  
+  const transformStyle = activePage > 0 ? `style="transform: translateX(-${activePage * 100}%);"` : '';
+  
+  return `
+    <div class="carousel-container" id="carousel-container-${id}">
+      ${showArrows ? `<button class="carousel-btn prev" ${prevDisabled} onclick="event.stopPropagation(); slideCarousel('${id}', -1, ${totalItems})">◀</button>` : ''}
+      <div class="carousel-viewport">
+        <div class="visual-grid carousel-track" id="carousel-track-${id}" ${transformStyle}>
+          ${itemsHtml}
+        </div>
+      </div>
+      ${showArrows ? `<button class="carousel-btn next" ${nextDisabled} onclick="event.stopPropagation(); slideCarousel('${id}', 1, ${totalItems})">▶</button>` : ''}
+    </div>
+  `;
+}
+
+function slideCarousel(id, direction, totalItems) {
+  if (!state.carouselPages) state.carouselPages = {};
+  const curPage = state.carouselPages[id] || 0;
+  const itemsPerView = getItemsPerView();
+  const maxPage = Math.max(0, Math.ceil(totalItems / itemsPerView) - 1);
+  
+  let newPage = curPage + direction;
+  if (newPage < 0) newPage = 0;
+  if (newPage > maxPage) newPage = maxPage;
+  
+  state.carouselPages[id] = newPage;
+  
+  const track = document.getElementById(`carousel-track-${id}`);
+  if (track) {
+    track.style.transform = `translateX(-${newPage * 100}%)`;
+  }
+  
+  const container = document.getElementById(`carousel-container-${id}`);
+  if (container) {
+    const prevBtn = container.querySelector('.carousel-btn.prev');
+    const nextBtn = container.querySelector('.carousel-btn.next');
+    if (prevBtn) {
+      if (newPage === 0) prevBtn.setAttribute('disabled', 'true');
+      else prevBtn.removeAttribute('disabled');
+    }
+    if (nextBtn) {
+      if (newPage === maxPage) nextBtn.setAttribute('disabled', 'true');
+      else nextBtn.removeAttribute('disabled');
+    }
+  }
+}
+
+// Window resize listener to update carousels dynamically
+window.addEventListener('resize', () => {
+  render();
+});
+
+// ═══════════════════════════════════════════════════════════════
 // RENDER SECTIONS
 // ═══════════════════════════════════════════════════════════════
 
@@ -936,9 +1015,7 @@ function renderVisualSection(sec){
           ${state.selections[cat.id]?`<button class="btn btn-xs btn-danger" onclick="setSelection('${cat.id}','${esc(state.selections[cat.id]||'')}')">✕</button>`:''}
         </div>
       </div>
-      <div class="visual-grid">
-        ${(cat.items||[]).map(item=>vcardHTML(item, cat.id)).join("")}
-      </div>
+      ${makeCarouselHTML(cat.id, (cat.items||[]).map(item=>vcardHTML(item, cat.id)).join(""), cat.items.length)}
     </div>`;
   }).join("");
 }
@@ -955,9 +1032,7 @@ function renderNestedSection(sec){
         <span class="nested-cat-arrow${isOpen?' open':''}" id="ncarr-${nc.id}">▶</span>
       </div>
       <div class="nested-cat-sub${isOpen?' open':''}" id="ncsub-${nc.id}">
-        <div class="visual-grid">
-          ${nc.items.map(item=>vcardHTML(item, item.catId||nc.id)).join("")}
-        </div>
+        ${makeCarouselHTML(nc.id, nc.items.map(item=>vcardHTML(item, item.catId||nc.id)).join(""), nc.items.length)}
       </div>
     </div>`;
   }).join("");
@@ -969,9 +1044,7 @@ function renderCameraSection(sec){
   (sec.cats||[]).forEach(cat=>{
     html+=`<div style="margin-bottom:16px">
       <div style="font-size:10px;color:var(--text3);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px">${cat.vi}</div>
-      <div class="visual-grid">
-        ${cat.items.map(item=>vcardHTML(item, cat.id)).join("")}
-      </div>
+      ${makeCarouselHTML(cat.id, cat.items.map(item=>vcardHTML(item, cat.id)).join(""), cat.items.length)}
     </div>`;
   });
   // Lens

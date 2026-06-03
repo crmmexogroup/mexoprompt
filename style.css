@@ -509,3 +509,103 @@ body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overf
   .quality-track{grid-template-columns:repeat(2,1fr);}
   .output-bar .btn-sm:nth-child(n+3){display:none;}
 }
+
+/* ── CAROUSEL STYLES ── */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 6px 4px;
+  margin: -6px -4px;
+}
+.carousel-track {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 10px !important;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  width: 100%;
+  grid-template-columns: none !important;
+}
+.carousel-track .vcard {
+  flex: 0 0 calc((100% - 40px) / 5);
+  min-width: 120px;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg2);
+  border: 1px solid var(--border3);
+  color: var(--primary2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--trans);
+  opacity: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.carousel-container:hover .carousel-btn {
+  opacity: 1;
+}
+.carousel-btn:hover {
+  background: var(--primary3);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-50%) scale(1.1);
+}
+.carousel-btn.prev {
+  left: -16px;
+}
+.carousel-btn.next {
+  right: -16px;
+}
+.carousel-btn[disabled] {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+/* Responsive carousel layout */
+@media (max-width: 900px) {
+  .carousel-track .vcard {
+    flex: 0 0 calc((100% - 20px) / 3);
+  }
+  .carousel-btn {
+    opacity: 0.8; /* Keep visible on touch devices */
+  }
+  .carousel-btn.prev {
+    left: -8px;
+  }
+  .carousel-btn.next {
+    right: -8px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-track .vcard {
+    flex: 0 0 calc((100% - 10px) / 2);
+  }
+  /* On mobile touch devices, enable native overflow-x touch scrolling (swipe) */
+  .carousel-viewport {
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+  }
+  .carousel-viewport::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on Chrome/Safari */
+  }
+  .carousel-track {
+    transition: none !important; /* Disable JS transition during swipe */
+  }
+  .carousel-btn {
+    display: none !important; /* Hide arrows on small mobile, rely on touch swipe */
+  }
+}
