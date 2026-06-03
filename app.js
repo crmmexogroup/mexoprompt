@@ -489,7 +489,7 @@ const SECTIONS = [
         multi: false,
         items: [
           {vi: "Cinematic (Điện ảnh)", en: "cinematic", icon: "🎨"},
-          {vi: "Siêu thực (Hyperrealistic)", en: "hyperrealistic", icon: "🎨"},
+          {vi: "Siêu thực (Hyperrealistic)", en: "raw photographic realism, unretouched candid photo style", icon: "🎨"},
           {vi: "Tranh màu nước (Watercolor)", en: "watercolor painting", icon: "🎨"},
           {vi: "Tranh sơn dầu (Oil painting)", en: "oil painting", icon: "🎨"},
           {vi: "Nhiếp ảnh đường phố", en: "street photography", icon: "🎨"},
@@ -737,13 +737,68 @@ function saveStorage(){
 // PROMPT BUILDER
 // ═══════════════════════════════════════════════════════════════
 
+function getNaturalSubjectString(s, douyinMode) {
+  let attr = "";
+  if (s.attractiveness) {
+    const a = s.attractiveness.toLowerCase();
+    if (a.includes("cute")) attr = "cute";
+    else if (a.includes("pretty")) attr = "pretty";
+    else if (a.includes("stylish")) attr = "stylish";
+    else if (a.includes("glamorous")) attr = "glamorous";
+    else if (a.includes("high fashion")) attr = "high-fashion";
+    else if (a.includes("influencer")) attr = "fashionable";
+    else if (a.includes("douyin")) attr = "stunning";
+    else attr = a;
+  }
+
+  let eth = "";
+  if (s.ethnicity) {
+    const e = s.ethnicity.toLowerCase();
+    if (e.includes("chinese")) eth = "Chinese";
+    else if (e.includes("korean")) eth = "Korean";
+    else if (e.includes("japanese")) eth = "Japanese";
+    else if (e.includes("vietnamese")) eth = "Vietnamese";
+    else if (e.includes("thai")) eth = "Thai";
+    else if (e.includes("mixed")) eth = "mixed Asian";
+    else if (e.includes("east asian")) eth = "East Asian";
+    else if (e.includes("southeast asian")) eth = "Southeast Asian";
+    else eth = s.ethnicity;
+  }
+
+  let type = "young woman";
+  if (s.characterType) {
+    const t = s.characterType.toLowerCase();
+    if (t.includes("young adult")) type = "young woman";
+    else if (t.includes("college")) type = "college student girl";
+    else if (t.includes("office")) type = "office lady";
+    else if (t.includes("model")) type = "fashion model";
+    else if (t.includes("influencer")) type = "influencer girl";
+    else if (t.includes("cosplayer")) type = "cosplay girl";
+    else if (t.includes("idol")) type = "idol girl";
+    else if (t.includes("socialite")) type = "luxury socialite lady";
+    else if (t.includes("gym")) type = "athletic gym girl";
+    else if (t.includes("gamer")) type = "gamer girl";
+    else if (t.includes("cafe")) type = "cafe customer girl";
+    else if (t.includes("traveler")) type = "traveler girl";
+    else type = t;
+  }
+
+  let combined = "";
+  if (douyinMode) {
+    combined = "A " + (attr ? attr + " " : "") + (eth ? eth + " " : "Asian ") + "Douyin beauty, " + type;
+  } else {
+    combined = "A " + (attr ? attr + " " : "") + (eth ? eth + " " : "") + type;
+  }
+  return combined.replace(/\s+/g, " ").trim();
+}
+
 function buildPrompt(){
   const s = state.selections;
   const parts = [];
   if(state.douyinMode) parts.push("Douyin aesthetic, Chinese social media style,");
-  if(s.characterType) parts.push(s.characterType + " female character,");
-  if(s.ethnicity) parts.push(s.ethnicity + " ethnicity,");
-  if(s.attractiveness) parts.push(s.attractiveness + " appearance,");
+  
+  const subjectStr = getNaturalSubjectString(s, state.douyinMode);
+  parts.push(subjectStr + ",");
   // Face
   const face=[];
   if(s.faceShape) face.push(s.faceShape + " face shape");
@@ -803,11 +858,7 @@ function formatForModel(prompt, model){
 function buildJsonPrompt() {
   const s = state.selections;
   
-  const subjectDescription = [
-    s.characterType ? s.characterType + " female character" : "Young adult female",
-    s.ethnicity ? s.ethnicity + " ethnicity" : "Asian",
-    s.attractiveness ? s.attractiveness + " appearance" : null
-  ].filter(Boolean).join(", ") + ".";
+  const subjectDescription = getNaturalSubjectString(s, state.douyinMode) + ".";
 
   const isMirrorSelfie = (s.pose && s.pose.toLowerCase().includes("mirror")) || 
                          (s.cameraAngle && s.cameraAngle.toLowerCase().includes("mirror"));
@@ -1556,24 +1607,24 @@ function checkConflicts() {
 
 function resolveConflict(ruleId) {
   const s = state.selections;
-  if (ruleId === "light_day_night" || ruleId === "light_natural_studio") {
+  if (ruleId === "light_indoor_outdoor") {
     delete s.lighting;
     showToast("🔓 Đã sửa: Hủy chọn Ánh sáng xung đột");
-  } else if (ruleId === "focus_depth") {
-    delete s.cameraEffects;
-    showToast("🔓 Đã sửa: Hủy chọn Xóa phông/Nét xung đột");
-  } else if (ruleId === "shot_angle_overhead_worm") {
-    delete s.cameraAngle;
-    showToast("🔓 Đã sửa: Hủy chọn Góc chụp xung đột");
-  } else if (ruleId === "shot_framing_clash") {
-    delete s.shotType;
-    showToast("🔓 Đã sửa: Hủy chọn Cỡ cảnh xung đột");
   } else if (ruleId === "lens_wide_tele") {
     delete s.lens;
     showToast("🔓 Đã sửa: Hủy chọn Tiêu cự xung đột");
-  } else if (ruleId === "camera_brand_smartphone") {
-    delete s.cameraType;
-    showToast("🔓 Đã sửa: Hủy chọn Máy ảnh xung đột");
+  } else if (ruleId === "selfie_tele_clash") {
+    delete s.lens;
+    showToast("🔓 Đã sửa: Hủy chọn Tiêu cự tele (Selfie không dùng lens Tele)");
+  } else if (ruleId === "fullbody_closeup_clash") {
+    delete s.cameraEffects;
+    showToast("🔓 Đã sửa: Hủy chọn Chi tiết da cực cận (Chụp toàn thân)");
+  } else if (ruleId === "closeup_wide_clash") {
+    delete s.lens;
+    showToast("🔓 Đã sửa: Hủy chọn Lens 24mm (Cận cảnh cực độ)");
+  } else if (ruleId === "smartphone_pro_lens") {
+    delete s.cameraEffects;
+    showToast("🔓 Đã sửa: Hủy chọn Hiệu ứng lens chuyên nghiệp (Smartphone)");
   }
   render();
 }

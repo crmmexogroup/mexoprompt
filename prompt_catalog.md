@@ -329,7 +329,7 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
 | Cinematic (Điện ảnh) | `cinematic` | 🎨 |
-| Siêu thực (Hyperrealistic) | `hyperrealistic` | 🎨 |
+| Siêu thực (Hyperrealistic) | `raw photographic realism, unretouched candid photo style` | 🎨 |
 | Tranh màu nước (Watercolor) | `watercolor painting` | 🎨 |
 | Tranh sơn dầu (Oil painting) | `oil painting` | 🎨 |
 | Nhiếp ảnh đường phố | `street photography` | 🎨 |
