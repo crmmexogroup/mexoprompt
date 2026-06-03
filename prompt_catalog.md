@@ -473,6 +473,8 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Hiệu ứng ống kính (ID: `cameraEffects`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
+| Lấy nét cực nét (Tack Sharp) | `tack sharp focus, high local contrast, detailed skin texture, visible pores, zero smoothing` | ⌖ |
+| Độ sắc nét cao (Zoom-in Clarity) | `extreme close-up on skin texture, macro photo of pores and vellus hair, unretouched, zoom-in clarity, high-fidelity micro-details` | ⌖ |
 | Xóa phông mạnh (Shallow DoF) | `shallow depth of field` | ⌖ |
 | Hiệu ứng Bokeh lung linh | `bokeh depth of field` | ⌖ |
 | Lóe sáng ống kính (Lens Flare) | `lens flare effect` | ⌖ |

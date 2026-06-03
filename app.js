@@ -4,7 +4,7 @@
 // DATA
 // ═══════════════════════════════════════════════════════════════
 
-const NEGATIVE_PROMPT = "bad anatomy, extra fingers, deformed hands, deformed limbs, crossed eyes, low resolution, blurry image, watermark, text overlay, logo, duplicate body parts, bad proportions, artifacts, oversaturated colors, plastic skin, cgi appearance, airbrushed skin, 3d render, illustration, cartoon, doll-like skin, over-retouched, fake skin texture, male subject, masculine features, man";
+const NEGATIVE_PROMPT = "bad anatomy, extra fingers, deformed hands, deformed limbs, crossed eyes, low resolution, blurry image, watermark, text overlay, logo, duplicate body parts, bad proportions, artifacts, oversaturated colors, plastic skin, cgi appearance, airbrushed skin, 3d render, illustration, cartoon, doll-like skin, over-retouched, fake skin texture, blurry face, soft focus, out of focus, motion blur, compression artifacts, pixelated, smooth plastic skin, low detail, airbrushed look, plastic face, male subject, masculine features, man";
 
 const QUALITY_LEVELS = [
   {id:"basic",    vi:"Cơ bản",        en:"Basic"},
@@ -14,10 +14,10 @@ const QUALITY_LEVELS = [
 ];
 
 const QUALITY_KEYWORDS = {
-  basic:    "raw photo, realistic skin texture,",
-  detailed: "highly detailed, raw photo, realistic skin texture with fine pores, natural hair strands, depth of field,",
-  pro:      "highly detailed, raw photo quality, realistic skin texture with visible pores, natural hair strands, authentic fabric physics, depth of field, cinematic lighting, professional composition, unretouched,",
-  extreme:  "raw photo, hyper-detailed skin texture, realistic skin pores and fine wrinkles, natural hair strands individually rendered, authentic fabric physics, bokeh depth of field, cinematic lighting, professional composition, realistic color science, realistic exposure, 35mm film grain, unretouched, candid snapshot quality,",
+  basic:    "raw photo, realistic skin texture, sharp focus,",
+  detailed: "highly detailed, raw photo, realistic skin texture with fine pores, natural hair strands, sharp focus,",
+  pro:      "highly detailed, raw photo quality, realistic skin texture with visible pores, natural hair strands, authentic fabric physics, tack sharp focus, cinematic lighting, professional composition, unretouched,",
+  extreme:  "raw photo, hyper-detailed skin texture, realistic skin pores and fine wrinkles, natural hair strands individually rendered, authentic fabric physics, tack sharp focus, cinematic lighting, professional composition, realistic color science, realistic exposure, 35mm film grain, unretouched, candid snapshot quality,",
 };
 
 const DOUYIN_PRESET = {
@@ -581,6 +581,8 @@ const SECTIONS = [
         id: "cameraEffects", vi: "Hiệu ứng ống kính", en: "Camera & Lens Effects",
         multi: false,
         items: [
+          {vi: "Lấy nét cực nét (Tack Sharp)", en: "tack sharp focus, high local contrast, detailed skin texture, visible pores, zero smoothing", icon: "⌖"},
+          {vi: "Độ sắc nét cao (Zoom-in Clarity)", en: "extreme close-up on skin texture, macro photo of pores and vellus hair, unretouched, zoom-in clarity, high-fidelity micro-details", icon: "⌖"},
           {vi: "Xóa phông mạnh (Shallow DoF)", en: "shallow depth of field", icon: "⌖"},
           {vi: "Hiệu ứng Bokeh lung linh", en: "bokeh depth of field", icon: "⌖"},
           {vi: "Lóe sáng ống kính (Lens Flare)", en: "lens flare effect", icon: "⌖"},
