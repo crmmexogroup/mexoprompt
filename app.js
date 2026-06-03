@@ -407,6 +407,71 @@ const SECTIONS = [
   },
 
   {
+    id: "style_section", vi: "Phong cách nghệ thuật", en: "Artistic Style", icon: "🎨",
+    type: "visual",
+    cats: [
+      {
+        id: "artisticStyle", vi: "Phong cách", en: "Artistic Style",
+        multi: false,
+        items: [
+          {vi: "Cinematic (Điện ảnh)", en: "cinematic", icon: "🎨"},
+          {vi: "Siêu thực (Hyperrealistic)", en: "hyperrealistic", icon: "🎨"},
+          {vi: "Tranh màu nước (Watercolor)", en: "watercolor painting", icon: "🎨"},
+          {vi: "Tranh sơn dầu (Oil painting)", en: "oil painting", icon: "🎨"},
+          {vi: "Nhiếp ảnh đường phố", en: "street photography", icon: "🎨"},
+          {vi: "Tối giản (Minimalism)", en: "minimalism", icon: "🎨"},
+          {vi: "Chồng hình (Double Exposure)", en: "double exposure", icon: "🎨"},
+          {vi: "Chụp mô hình (Tilt-shift)", en: "tilt-shift", icon: "🎨"},
+          {vi: "Tranh khắc gỗ (Ukiyo-e)", en: "ukiyo-e", icon: "🎨"},
+          {vi: "Điểm ảnh (Pixel Art)", en: "pixel art", icon: "🎨"},
+          {vi: "Cyberpunk", en: "cyberpunk", icon: "🎨"},
+          {vi: "Vaporwave", en: "vaporwave", icon: "🎨"},
+          {vi: "Bản vẽ chì (Pencil sketch)", en: "pencil sketch", icon: "🎨"},
+          {vi: "Bản vẽ than (Charcoal)", en: "charcoal drawing", icon: "🎨"},
+          {vi: "Đất sét (Claymation)", en: "claymation", icon: "🎨"},
+          {vi: "Thực vật chi tiết (Botanical)", en: "botanical illustration", icon: "🎨"},
+          {vi: "Thẩm mỹ hoài cổ (Synthwave)", en: "synthwave", icon: "🎨"},
+          {vi: "Kính màu (Stained glass)", en: "stained glass", icon: "🎨"},
+          {vi: "Tranh thêu (Cross-stitch)", en: "cross-stitch", icon: "🎨"},
+          {vi: "Tranh khảm (Mosaic)", en: "mosaic", icon: "🎨"},
+          {vi: "Nghệ thuật ảo giác", en: "psychedelic art", icon: "🎨"}
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "composition_section", vi: "Bố cục", en: "Composition", icon: "📐",
+    type: "visual",
+    cats: [
+      {
+        id: "composition", vi: "Bố cục", en: "Composition",
+        multi: false,
+        items: [
+          {vi: "Quy tắc một phần ba (Rule of Thirds)", en: "rule of thirds", icon: "📐"},
+          {vi: "Tỷ lệ vàng (Golden Ratio)", en: "golden ratio", icon: "📐"},
+          {vi: "Đường dẫn hướng (Leading Lines)", en: "leading lines", icon: "📐"},
+          {vi: "Đối xứng hoàn hảo (Symmetry)", en: "symmetry", icon: "📐"},
+          {vi: "Khoảng trống âm (Negative Space)", en: "negative space", icon: "📐"},
+          {vi: "Bố cục lồng khung (Framing)", en: "framing", icon: "📐"},
+          {vi: "Bố cục trung tâm (Centred)", en: "centred composition", icon: "📐"},
+          {vi: "Hình tam giác (Triangular)", en: "triangular composition", icon: "📐"},
+          {vi: "Đường chéo động (Diagonal)", en: "diagonal lines", icon: "📐"},
+          {vi: "Số lẻ hài hòa (Rule of Odds)", en: "rule of odds", icon: "📐"},
+          {vi: "Lớp lấy nét sâu (DoF Stacking)", en: "depth of field stacking", icon: "📐"},
+          {vi: "Bố cục chữ Z (Z-Shape)", en: "Z-Shape composition", icon: "📐"},
+          {vi: "Lấp đầy khung hình (Filling)", en: "filling the frame", icon: "📐"},
+          {vi: "Tiền cảnh ấn tượng (Foreground Interest)", en: "foreground interest", icon: "📐"},
+          {vi: "Đường cong chữ S (S-Curve)", en: "S-curve composition", icon: "📐"},
+          {vi: "Điểm tụ vô chậm (Vanishing Point)", en: "vanishing point", icon: "📐"},
+          {vi: "Tối viền nghệ thuật (Vignetting)", en: "vignetting", icon: "📐"},
+          {vi: "Đẩy sâu chủ thể (Repoussoir)", en: "repoussoir", icon: "📐"}
+        ]
+      }
+    ]
+  },
+
+  {
     id:"scene", vi:"Bối cảnh", en:"Scene & Location", icon:"⌾",
     type:"nested",
     nestedCats:[
@@ -447,6 +512,21 @@ const SECTIONS = [
           {vi:"Neon",              en:"Neon lighting",       img:"assets/light/neon.jpg",       catId:"lighting"},
           {vi:"Phố đêm",           en:"Night Street",        img:"assets/light/night.jpg",     catId:"lighting"},
           {vi:"Ánh đèn cà phê",    en:"Cafe Light",          img:"assets/light/cafe.jpg",      catId:"lighting"},
+          {vi:"Luồng tia sáng (Volumetric)", en:"volumetric lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh sáng viền (Rim light)", en:"rim lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Cổ điển Rembrandt", en:"rembrandt lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh sáng ngược (Backlight)", en:"backlighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Nắng qua lá (Dappled)", en:"dappled light", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Tương phản tối (Low-key)", en:"low-key lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Gothic u ám", en:"gothic lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh sáng Gobo hoa văn", en:"gobo lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh sáng Gel màu", en:"gel lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh đèn đường chói (Halos)", en:"street light halos and glare", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh sáng viền cạnh (Edge)", en:"edge lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Hắt màn hình (Screen light)", en:"screen light on face", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Ánh nến độc nhất", en:"light from a single candle", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Phản chiếu đường ướt", en:"wet reflections lighting", img:"", catId:"lighting", icon:"☀"},
+          {vi:"Chiếu sáng toàn cục (GI)", en:"global illumination (GI)", img:"", catId:"lighting", icon:"☀"}
         ]
       },
     ]
@@ -476,6 +556,43 @@ const SECTIONS = [
           {vi:"Cực cận",      en:"Extreme Close-Up shot",img:"", icon:"⊡"},
         ]
       },
+      {
+        id: "cameraAngle", vi: "Góc chụp", en: "Camera Angle",
+        multi: false,
+        items: [
+          {vi: "Ngang tầm mắt (Eye-Level)", en: "eye-level shot", icon: "⌖"},
+          {vi: "Góc thấp (Low Angle)", en: "low angle shot", icon: "⌖"},
+          {vi: "Góc cao (High Angle)", en: "high angle shot", icon: "⌖"},
+          {vi: "Từ dưới đất lên (Worm's-eye)", en: "worm's-eye view", icon: "⌖"},
+          {vi: "Từ trên cao xuống (Bird's-eye)", en: "bird's-eye view", icon: "⌖"},
+          {vi: "Nghiêng kịch tính (Dutch Tilt)", en: "Dutch tilt canted angle", icon: "⌖"},
+          {vi: "Góc ngang hông (Hip-Level)", en: "hip-level shot", icon: "⌖"},
+          {vi: "Ngang vai (Shoulder-Level)", en: "shoulder-level shot", icon: "⌖"},
+          {vi: "Nhìn nghiêng 3/4 (Three-Quarter)", en: "three-quarter view", icon: "⌖"},
+          {vi: "Góc nhìn thứ nhất (POV)", en: "POV perspective", icon: "⌖"},
+          {vi: "Sát mặt sàn (Floor Angle)", en: "floor angle shot", icon: "⌖"},
+          {vi: "Góc chụp lén (Candid Hidden)", en: "candid hidden camera angle", icon: "⌖"},
+          {vi: "Chụp từ phía sau (Reverse Profile)", en: "reverse profile shot", icon: "⌖"}
+        ]
+      },
+      {
+        id: "cameraEffects", vi: "Hiệu ứng ống kính", en: "Camera & Lens Effects",
+        multi: false,
+        items: [
+          {vi: "Xóa phông mạnh (Shallow DoF)", en: "shallow depth of field", icon: "⌖"},
+          {vi: "Hiệu ứng Bokeh lung linh", en: "bokeh depth of field", icon: "⌖"},
+          {vi: "Lóe sáng ống kính (Lens Flare)", en: "lens flare effect", icon: "⌖"},
+          {vi: "Mờ nhòe chuyển động (Motion Blur)", en: "motion blur", icon: "⌖"},
+          {vi: "Phơi sáng lâu (Long Exposure)", en: "long exposure", icon: "⌖"},
+          {vi: "Ống kính mắt cá (Fisheye Lens)", en: "fisheye lens effect", icon: "⌖"},
+          {vi: "Lóe sáng ngang điện ảnh (Anamorphic)", en: "anamorphic lens flare", icon: "⌖"},
+          {vi: "Hạt phim hoài cổ (Film Grain)", en: "high film grain texture", icon: "⌖"},
+          {vi: "Màu phim cổ [Kodak Portra 400]", en: "simulated Kodak Portra 400 film stock", icon: "⌖"},
+          {vi: "Khẩu độ cực lớn f/1.2 (Ultra Bokeh)", en: "shot at f/1.2 aperture", icon: "⌖"},
+          {vi: "Tốc độ chụp nhanh 1/8000s", en: "frozen action at 1/8000s shutter speed", icon: "⌖"},
+          {vi: "Viền màu lỗi thấu kính (Color Fringing)", en: "chromatic aberration color fringing", icon: "⌖"}
+        ]
+      }
     ],
     lensOptions:[
       {mm:"24", vi:"Góc rộng",   en:"Wide Angle",    use:"Phong cảnh, nhóm",    fovH:100},
@@ -579,6 +696,9 @@ function buildPrompt(){
   if(cloth.length) parts.push(cloth.join(", ")+",");
   // Pose
   if(s.pose) parts.push(s.pose+",");
+  // Style & Composition
+  if(s.artisticStyle) parts.push(s.artisticStyle+",");
+  if(s.composition) parts.push(s.composition+",");
   // Scene
   if(s.location) parts.push(s.location+",");
   if(s.lighting) parts.push(s.lighting+",");
@@ -587,6 +707,8 @@ function buildPrompt(){
   if(s.cameraType) cam.push(s.cameraType + " camera");
   if(s.lens) cam.push(s.lens + " lens");
   if(s.shotType) cam.push(s.shotType);
+  if(s.cameraAngle) cam.push(s.cameraAngle);
+  if(s.cameraEffects) cam.push(s.cameraEffects);
   if(cam.length) parts.push(cam.join(", ")+",");
   // Quality
   parts.push(QUALITY_KEYWORDS[state.qualityLevel]||QUALITY_KEYWORDS.detailed);
@@ -602,8 +724,153 @@ function formatForModel(prompt, model){
   return prompt;
 }
 
+function buildJsonPrompt() {
+  const s = state.selections;
+  
+  const subjectDescription = [
+    s.characterType ? s.characterType + " female character" : "Young adult female",
+    s.ethnicity ? s.ethnicity + " ethnicity" : "Asian",
+    s.attractiveness ? s.attractiveness + " appearance" : null
+  ].filter(Boolean).join(", ") + ".";
+
+  const isMirrorSelfie = (s.pose && s.pose.toLowerCase().includes("mirror")) || 
+                         (s.cameraAngle && s.cameraAngle.toLowerCase().includes("mirror"));
+
+  const eyesLook = s.eyes || "Natural eyes.";
+  const mouthPos = s.expression && s.expression.toLowerCase().includes("smile") ? "Soft smile, slightly parted." : "Closed, neutral.";
+  
+  const skinTone = s.skin || "Fair, natural skin tone.";
+  const skinTexture = s.skinDetail || "Smooth, natural skin texture with visible pores.";
+  const lightEffect = s.lighting ? "Highlights on skin matching " + s.lighting : "Soft ambient shadows and highlights.";
+
+  const hairStyleStr = s.hairStyle || "Long straight hair.";
+  const hairColorStr = s.hairColor || "Dark brown/black.";
+  
+  const bodyFrame = s.bodyType || "Hourglass, slender curves.";
+  const bustStr = s.bust || "Average bust.";
+  const legsParts = [s.hips, s.thighs, s.legLength].filter(Boolean).join(", ");
+  const bodyLegs = legsParts ? legsParts : "Slender legs, matching body frame.";
+
+  const dressType = s.clothing || "Casual clothing.";
+  const fabricStr = s.fabric || "Soft fabric texture.";
+
+  const poseStr = s.pose || "Standing naturally, relaxed posture.";
+
+  const camStyle = s.cameraType || "Smartphone digital camera.";
+  const camAngle = s.cameraAngle || "Eye-level neutral shot.";
+  const shotTypeStr = s.shotType || "Medium portrait shot.";
+  
+  const camEffectsStr = s.cameraEffects || "Digital clarity with natural noise.";
+  const lightStr = s.lighting || "Soft natural ambient lighting.";
+
+  const dofStr = (s.cameraEffects && (s.cameraEffects.includes("bokeh") || s.cameraEffects.includes("depth"))) ||
+                 (s.lens && (s.lens.includes("85mm") || s.lens.includes("50mm") || s.lens.includes("135mm"))) 
+                 ? "Shallow depth of field, creamy background bokeh." 
+                 : "Moderate depth of field, keeping background readable.";
+
+  const locationSetting = s.location || "Cozy, realistic setting.";
+  const aestheticStr = s.artisticStyle || "Cinematic street photography.";
+
+  const negativeArray = NEGATIVE_PROMPT.split(", ").map(item => item.trim());
+
+  const jsonObject = {
+    subject: {
+      description: subjectDescription,
+      mirror_rules: isMirrorSelfie ? "Phone held at face level, partially obscuring the face in mirror reflection." : "None.",
+      age: "Early 20s",
+      expression: {
+        eyes: {
+          look: eyesLook,
+          energy: s.expression && s.expression.toLowerCase().includes("smile") ? "Bright, happy." : "Calm, neutral.",
+          direction: isMirrorSelfie ? "Looking at the phone screen reflection." : "Looking towards the camera lens."
+        },
+        mouth: {
+          position: mouthPos,
+          energy: "Soft, relaxed."
+        },
+        overall: s.expression || "Natural, calm expression."
+      },
+      face: {
+        preserve_original: "True",
+        makeup: s.makeup || "Natural style makeup, dewy base, soft lips."
+      }
+    },
+    hair: {
+      color: hairColorStr,
+      style: hairStyleStr,
+      effect: "Soft natural reflection."
+    },
+    body: {
+      frame: bodyFrame,
+      waist: (s.bodyType && ["curvy", "hourglass", "petite"].some(t => s.bodyType.toLowerCase().includes(t))) ? "Defined, narrow." : "Natural.",
+      chest: bustStr,
+      legs: bodyLegs,
+      skin: {
+        visible_areas: s.clothing && s.clothing.toLowerCase().includes("bikini") ? "Full body, chest, stomach, hips, thighs, arms." : "Face, neck, hands, collarbone.",
+        tone: skinTone,
+        texture: skinTexture,
+        lighting_effect: lightEffect
+      }
+    },
+    pose: {
+      position: poseStr,
+      base: "Weight distributed naturally.",
+      overall: poseStr
+    },
+    clothing: {
+      top: {
+        type: dressType,
+        color: "Matching default color.",
+        details: fabricStr,
+        effect: "Form-fitting."
+      },
+      bottom: {
+        type: s.clothing && s.clothing.toLowerCase().includes("bikini") ? "Matching bikini bottom" : "Matching lower wear.",
+        color: "Same color.",
+        details: fabricStr
+      }
+    },
+    accessories: {
+      prop: isMirrorSelfie ? "Smartphone in hand." : "None."
+    },
+    photography: {
+      camera_style: camStyle,
+      angle: camAngle,
+      shot_type: shotTypeStr,
+      aspect_ratio: (isMirrorSelfie || camStyle.toLowerCase().includes("smart")) ? "9:16" : "2:3",
+      texture: camEffectsStr,
+      lighting: lightStr,
+      depth_of_field: dofStr
+    },
+    background: {
+      setting: locationSetting,
+      wall_color: "Neutral tones.",
+      elements: [locationSetting].filter(Boolean),
+      atmosphere: "Atmospheric, natural background.",
+      lighting: lightStr
+    },
+    the_vibe: {
+      energy: s.expression && s.expression.toLowerCase().includes("smile") ? "Bright, warm, happy." : "Calm, quiet confidence.",
+      mood: "Cozy, day-to-day realism.",
+      aesthetic: aestheticStr,
+      authenticity: "High candid snapshot feel.",
+      intimacy: isMirrorSelfie ? "Intimate personal space." : "Observational.",
+      story: "A quiet slice-of-life moment.",
+      caption_energy: "Chill day. / Just capturing a moment."
+    },
+    constraints: {
+      must_keep: [s.characterType, s.clothing, s.pose, s.location].filter(Boolean),
+      avoid: ["Professional studio flash", "Heavily retouched appearance", "Unnatural expressions"].filter(Boolean)
+    },
+    negative_prompt: negativeArray
+  };
+
+  return JSON.stringify(jsonObject, null, 2);
+}
+
 function getTabContent(){
   if(state.activeTab==="Negative") return NEGATIVE_PROMPT;
+  if(state.activeTab==="JSON") return buildJsonPrompt();
   const p = buildPrompt();
   if(state.activeTab==="Universal") return p;
   return formatForModel(p, state.activeTab);
@@ -1146,7 +1413,7 @@ function renderQuality(){
 }
 
 function renderOutput(){
-  const tabs=["Universal","GPT Image","Grok","Banana/Flux","Negative"];
+  const tabs=["Universal","GPT Image","Grok","Banana/Flux","JSON","Negative"];
   const tabsEl=document.getElementById("outputTabs");
   if(tabsEl) tabsEl.innerHTML=tabs.map(t=>`
     <div class="output-tab${state.activeTab===t?' active':''}" onclick="setTab('${t}')">${t}</div>

@@ -320,6 +320,63 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 
 ---
 
+## 🎨 Danh mục: Phong cách nghệ thuật (Artistic Style)
+*Kiểu hiển thị trên giao diện: `visual`*
+
+### 🔸 Nhóm thuộc tính: Phong cách (ID: `artisticStyle`)
+| Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
+| --- | --- | --- |
+| Cinematic (Điện ảnh) | `cinematic` | 🎨 |
+| Siêu thực (Hyperrealistic) | `hyperrealistic` | 🎨 |
+| Tranh màu nước (Watercolor) | `watercolor painting` | 🎨 |
+| Tranh sơn dầu (Oil painting) | `oil painting` | 🎨 |
+| Nhiếp ảnh đường phố | `street photography` | 🎨 |
+| Tối giản (Minimalism) | `minimalism` | 🎨 |
+| Chồng hình (Double Exposure) | `double exposure` | 🎨 |
+| Chụp mô hình (Tilt-shift) | `tilt-shift` | 🎨 |
+| Tranh khắc gỗ (Ukiyo-e) | `ukiyo-e` | 🎨 |
+| Điểm ảnh (Pixel Art) | `pixel art` | 🎨 |
+| Cyberpunk | `cyberpunk` | 🎨 |
+| Vaporwave | `vaporwave` | 🎨 |
+| Bản vẽ chì (Pencil sketch) | `pencil sketch` | 🎨 |
+| Bản vẽ than (Charcoal) | `charcoal drawing` | 🎨 |
+| Đất sét (Claymation) | `claymation` | 🎨 |
+| Thực vật chi tiết (Botanical) | `botanical illustration` | 🎨 |
+| Thẩm mỹ hoài cổ (Synthwave) | `synthwave` | 🎨 |
+| Kính màu (Stained glass) | `stained glass` | 🎨 |
+| Tranh thêu (Cross-stitch) | `cross-stitch` | 🎨 |
+| Tranh khảm (Mosaic) | `mosaic` | 🎨 |
+| Nghệ thuật ảo giác | `psychedelic art` | 🎨 |
+
+---
+
+## 📐 Danh mục: Bố cục (Composition)
+*Kiểu hiển thị trên giao diện: `visual`*
+
+### 🔸 Nhóm thuộc tính: Bố cục (ID: `composition`)
+| Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
+| --- | --- | --- |
+| Quy tắc một phần ba (Rule of Thirds) | `rule of thirds` | 📐 |
+| Tỷ lệ vàng (Golden Ratio) | `golden ratio` | 📐 |
+| Đường dẫn hướng (Leading Lines) | `leading lines` | 📐 |
+| Đối xứng hoàn hảo (Symmetry) | `symmetry` | 📐 |
+| Khoảng trống âm (Negative Space) | `negative space` | 📐 |
+| Bố cục lồng khung (Framing) | `framing` | 📐 |
+| Bố cục trung tâm (Centred) | `centred composition` | 📐 |
+| Hình tam giác (Triangular) | `triangular composition` | 📐 |
+| Đường chéo động (Diagonal) | `diagonal lines` | 📐 |
+| Số lẻ hài hòa (Rule of Odds) | `rule of odds` | 📐 |
+| Lớp lấy nét sâu (DoF Stacking) | `depth of field stacking` | 📐 |
+| Bố cục chữ Z (Z-Shape) | `Z-Shape composition` | 📐 |
+| Lấp đầy khung hình (Filling) | `filling the frame` | 📐 |
+| Tiền cảnh ấn tượng (Foreground Interest) | `foreground interest` | 📐 |
+| Đường cong chữ S (S-Curve) | `S-curve composition` | 📐 |
+| Điểm tụ vô chậm (Vanishing Point) | `vanishing point` | 📐 |
+| Tối viền nghệ thuật (Vignetting) | `vignetting` | 📐 |
+| Đẩy sâu chủ thể (Repoussoir) | `repoussoir` | 📐 |
+
+---
+
 ## ⌾ Danh mục: Bối cảnh (Scene & Location)
 *Kiểu hiển thị trên giao diện: `nested`*
 
@@ -357,6 +414,21 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 | Neon | `Neon lighting` | `lighting` |
 | Phố đêm | `Night Street` | `lighting` |
 | Ánh đèn cà phê | `Cafe Light` | `lighting` |
+| Luồng tia sáng (Volumetric) | `volumetric lighting` | `lighting` |
+| Ánh sáng viền (Rim light) | `rim lighting` | `lighting` |
+| Cổ điển Rembrandt | `rembrandt lighting` | `lighting` |
+| Ánh sáng ngược (Backlight) | `backlighting` | `lighting` |
+| Nắng qua lá (Dappled) | `dappled light` | `lighting` |
+| Tương phản tối (Low-key) | `low-key lighting` | `lighting` |
+| Gothic u ám | `gothic lighting` | `lighting` |
+| Ánh sáng Gobo hoa văn | `gobo lighting` | `lighting` |
+| Ánh sáng Gel màu | `gel lighting` | `lighting` |
+| Ánh đèn đường chói (Halos) | `street light halos and glare` | `lighting` |
+| Ánh sáng viền cạnh (Edge) | `edge lighting` | `lighting` |
+| Hắt màn hình (Screen light) | `screen light on face` | `lighting` |
+| Ánh nến độc nhất | `light from a single candle` | `lighting` |
+| Phản chiếu đường ướt | `wet reflections lighting` | `lighting` |
+| Chiếu sáng toàn cục (GI) | `global illumination (GI)` | `lighting` |
 
 ---
 
@@ -378,6 +450,39 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 | Chân dung | `Portrait shot` | ⊡ |
 | Cận cảnh | `Close-Up shot` | ⊡ |
 | Cực cận | `Extreme Close-Up shot` | ⊡ |
+
+### 🔸 Nhóm thuộc tính: Góc chụp (ID: `cameraAngle`)
+| Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
+| --- | --- | --- |
+| Ngang tầm mắt (Eye-Level) | `eye-level shot` | ⌖ |
+| Góc thấp (Low Angle) | `low angle shot` | ⌖ |
+| Góc cao (High Angle) | `high angle shot` | ⌖ |
+| Từ dưới đất lên (Worm's-eye) | `worm's-eye view` | ⌖ |
+| Từ trên cao xuống (Bird's-eye) | `bird's-eye view` | ⌖ |
+| Nghiêng kịch tính (Dutch Tilt) | `Dutch tilt canted angle` | ⌖ |
+| Góc ngang hông (Hip-Level) | `hip-level shot` | ⌖ |
+| Ngang vai (Shoulder-Level) | `shoulder-level shot` | ⌖ |
+| Nhìn nghiêng 3/4 (Three-Quarter) | `three-quarter view` | ⌖ |
+| Góc nhìn thứ nhất (POV) | `POV perspective` | ⌖ |
+| Sát mặt sàn (Floor Angle) | `floor angle shot` | ⌖ |
+| Góc chụp lén (Candid Hidden) | `candid hidden camera angle` | ⌖ |
+| Chụp từ phía sau (Reverse Profile) | `reverse profile shot` | ⌖ |
+
+### 🔸 Nhóm thuộc tính: Hiệu ứng ống kính (ID: `cameraEffects`)
+| Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
+| --- | --- | --- |
+| Xóa phông mạnh (Shallow DoF) | `shallow depth of field` | ⌖ |
+| Hiệu ứng Bokeh lung linh | `bokeh depth of field` | ⌖ |
+| Lóe sáng ống kính (Lens Flare) | `lens flare effect` | ⌖ |
+| Mờ nhòe chuyển động (Motion Blur) | `motion blur` | ⌖ |
+| Phơi sáng lâu (Long Exposure) | `long exposure` | ⌖ |
+| Ống kính mắt cá (Fisheye Lens) | `fisheye lens effect` | ⌖ |
+| Lóe sáng ngang điện ảnh (Anamorphic) | `anamorphic lens flare` | ⌖ |
+| Hạt phim hoài cổ (Film Grain) | `high film grain texture` | ⌖ |
+| Màu phim cổ [Kodak Portra 400] | `simulated Kodak Portra 400 film stock` | ⌖ |
+| Khẩu độ cực lớn f/1.2 (Ultra Bokeh) | `shot at f/1.2 aperture` | ⌖ |
+| Tốc độ chụp nhanh 1/8000s | `frozen action at 1/8000s shutter speed` | ⌖ |
+| Viền màu lỗi thấu kính (Color Fringing) | `chromatic aberration color fringing` | ⌖ |
 
 ### 📷 Danh sách Ống kính (Lens Options)
 | Tiêu cự (mm) | Tiếng Việt | Ứng dụng khuyên dùng | Góc nhìn mô phỏng (FOV) |

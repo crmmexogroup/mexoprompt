@@ -1,0 +1,1752 @@
+[
+  {
+    "id": 1,
+    "name": "Groceries Escalator Casual Run",
+    "subject": {
+      "description": "Young Asian woman, casual everyday aesthetic, wearing form-fitting knitwear.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Calm, looking away from camera.",
+          "energy": "Relaxed.",
+          "direction": "Looking off-frame to the right."
+        },
+        "mouth": {
+          "position": "Closed, neutral.",
+          "energy": "Soft, unbothered."
+        },
+        "overall": "Casual, natural gaze."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Light East Asian beauty style, dewy glass-skin base, soft peach lips, subtle contour."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "Tied up/back, soft wispy curtain bangs framing the face.",
+      "effect": "Slightly messy, casual, matte."
+    },
+    "body": {
+      "frame": "Hourglass, prominent curves.",
+      "waist": "Narrow, cinched appearance due to pose.",
+      "chest": "Full, heavily emphasized by tight fabric.",
+      "legs": "Not fully visible, thighs covered by tight dress.",
+      "skin": {
+        "visible_areas": "Arms, neck, upper chest, shoulders.",
+        "tone": "Fair, pale.",
+        "texture": "Smooth, natural skin texture with visible pores.",
+        "lighting_effect": "Harsh overhead fluorescent light creating soft highlights on collarbones."
+      }
+    },
+    "pose": {
+      "position": "Standing on a moving escalator.",
+      "base": "Weight shifted slightly, hip jutted out.",
+      "overall": "Both arms raised, hands tucked behind the back of the neck/head. Torso stretched upward."
+    },
+    "clothing": {
+      "top": {
+        "type": "Spaghetti strap slip dress top.",
+        "color": "Beige/Nude.",
+        "details": "Ribbed knit material, extreme form-fitting, braless.",
+        "effect": "Stretching tightly across the chest."
+      },
+      "bottom": {
+        "type": "Maxi dress skirt (continuous from top).",
+        "color": "Beige/Nude.",
+        "details": "Tight, hugging hips and thighs."
+      }
+    },
+    "accessories": {
+      "prop": "Metal shopping cart directly beside her, containing a large yellow plush toy."
+    },
+    "photography": {
+      "camera_style": "Smartphone casual portrait.",
+      "angle": "Slight low angle.",
+      "shot_type": "Medium-long shot (mid-thigh up).",
+      "aspect_ratio": "9:16",
+      "texture": "Digital clarity, slight candid imperfection.",
+      "lighting": "Harsh overhead rectangular fluorescent commercial lights.",
+      "depth_of_field": "Moderate bokeh, blurring the background slightly."
+    },
+    "background": {
+      "setting": "Supermarket department store escalator.",
+      "wall_color": "Industrial grey/white ceiling, metal rails.",
+      "elements": [
+        "Metal shopping cart",
+        "Overhead rectangular lights",
+        "Green store signage",
+        "Distant blurred shoppers"
+      ],
+      "atmosphere": "Public, mundane, brightly lit.",
+      "lighting": "Commercial indoor artificial lighting."
+    },
+    "the_vibe": {
+      "energy": "Confident, relaxed.",
+      "mood": "Mundane task made alluring.",
+      "aesthetic": "Girl-next-door, casual grocery run.",
+      "authenticity": "High candid feel, imperfect commercial lighting.",
+      "intimacy": "Observational.",
+      "story": "She was casually stretching her arms while riding the escalator in a store.",
+      "caption_energy": "Late night grocery run. / Just stretching."
+    },
+    "constraints": {
+      "must_keep": [
+        "Raised arms pose",
+        "Tight beige ribbed dress with visible chest contours",
+        "Shopping cart with yellow plushie",
+        "Supermarket lighting"
+      ],
+      "avoid": [
+        "Perfect studio lighting",
+        "Loose clothing",
+        "Looking at camera",
+        "Heavy glamour makeup"
+      ]
+    },
+    "negative_prompt": [
+      "studio setup",
+      "overexposed",
+      "looking at camera",
+      "loose clothes",
+      "heavy makeup",
+      "bra",
+      "professional posing"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cozy Café Afternoon Reading",
+    "subject": {
+      "description": "Young East Asian female student, cozy and quiet lifestyle aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Focused down on a book.",
+          "energy": "Introspective, gentle.",
+          "direction": "Looking downward."
+        },
+        "mouth": {
+          "position": "Neutral, relaxed.",
+          "energy": "Soft, tranquil."
+        },
+        "overall": "Quiet concentration, oblivious to the camera."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Minimal, fresh-faced makeup, soft coral lip balm, clean brow groom."
+      }
+    },
+    "hair": {
+      "color": "Soft brown",
+      "style": "Loose low ponytail with soft face-framing strands.",
+      "effect": "Flowing forward over shoulder, catching warm light."
+    },
+    "body": {
+      "frame": "Petite, slender.",
+      "waist": "Relaxed sitting posture.",
+      "chest": "Average, covered by cozy sweater.",
+      "legs": "Tucked comfortably under the table.",
+      "skin": {
+        "visible_areas": "Hands, wrists, face, neck.",
+        "tone": "Fair, warm ivory.",
+        "texture": "Smooth, clean skin texture.",
+        "lighting_effect": "Soft window light highlighting the side of her face and hands holding the book."
+      }
+    },
+    "pose": {
+      "position": "Seated at a wooden corner table.",
+      "base": "Leaning forward on elbows.",
+      "overall": "Both hands holding an open book, head tilted down slightly in focus."
+    },
+    "clothing": {
+      "top": {
+        "type": "Oversized chunky knit sweater.",
+        "color": "Oatmeal/Cream.",
+        "details": "Thick cable knit texture, loosely draped over shoulders.",
+        "effect": "Soft, warm, comfortable look."
+      },
+      "bottom": {
+        "type": "Plaid skirt.",
+        "color": "Brown and beige checks.",
+        "details": "Flannel fabric, mostly hidden under table."
+      }
+    },
+    "accessories": {
+      "prop": "Warm ceramic mug with latte art on the table, eyeglasses folded beside it."
+    },
+    "photography": {
+      "camera_style": "DSLR candid shot.",
+      "angle": "Eye-level from across the table.",
+      "shot_type": "Medium close-up (chest up).",
+      "aspect_ratio": "3:4",
+      "texture": "Organic, soft film grain.",
+      "lighting": "Soft window light (diffused and natural).",
+      "depth_of_field": "Shallow depth of field (85mm f/1.8 lens effect), creamy bokeh of cafe details behind."
+    },
+    "background": {
+      "setting": "Cozy bookstore cafe interior.",
+      "wall_color": "Warm wood paneling, dark teal shelves.",
+      "elements": [
+        "Wooden bookshelf stacked with books",
+        "Soft incandescent hanging globe bulb",
+        "Green plant leaves in corner",
+        "Blurred background chairs"
+      ],
+      "atmosphere": "Warm, intellectual, cozy, quiet.",
+      "lighting": "Mixed natural window light and warm ambient indoor light."
+    },
+    "the_vibe": {
+      "energy": "Calm, serene.",
+      "mood": "Slow afternoon, quiet studying.",
+      "aesthetic": "Academic, cottagecore-adjacent, soft-focus snapshot.",
+      "authenticity": "High candid feel, unposed snapshot look.",
+      "intimacy": "Close, observational.",
+      "story": "Taking a peaceful break at a local indie cafe on a rainy afternoon.",
+      "caption_energy": "Rainy day, warm cups. / Getting lost in chapters."
+    },
+    "constraints": {
+      "must_keep": [
+        "Cable knit sweater texture",
+        "Hands holding open book",
+        "Ceramic mug on wooden table",
+        "Soft window side-lighting"
+      ],
+      "avoid": [
+        "Direct eye contact",
+        "Modern neon lights",
+        "Sportswear",
+        "Bright studio lights"
+      ]
+    },
+    "negative_prompt": [
+      "stiff posing",
+      "looking at camera",
+      "neon lighting",
+      "artificial studio flash",
+      "heavy makeup",
+      "modern tech devices",
+      "distorted anatomy"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cozy Apartment Rainy Window Vibe",
+    "subject": {
+      "description": "Young Asian woman, intimate indoor lifestyle aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Soft, gazing dreamily out of the window.",
+          "energy": "Melancholic, calm.",
+          "direction": "Looking off-camera left towards window."
+        },
+        "mouth": {
+          "position": "Closed, relaxed.",
+          "energy": "Tranquil, neutral."
+        },
+        "overall": "Dreamy, calm, lost in thought."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Dewy skin base, minimal clean makeup, soft lip stain."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "Long, messy loose bun with locks falling down around the ears.",
+      "effect": "Soft, natural texture, slightly disheveled."
+    },
+    "body": {
+      "frame": "Petite, slender curves.",
+      "waist": "Relaxed sitting curve.",
+      "chest": "Medium, soft contour visible under loungewear.",
+      "legs": "Pulled up to chest, knees hugged.",
+      "skin": {
+        "visible_areas": "Bare shoulders, neck, collarbone, bare feet.",
+        "tone": "Fair, pale skin.",
+        "texture": "Velvety, smooth, natural.",
+        "lighting_effect": "Cool daylight from the window highlights her shoulder and cheek, warm ambient room light fills shadows."
+      }
+    },
+    "pose": {
+      "position": "Seated on a cozy window sill cushion.",
+      "base": "Knees pulled up close to chest, arms wrapped loosely around legs.",
+      "overall": "Cuddled up posture, leaning head back slightly against the window frame."
+    },
+    "clothing": {
+      "top": {
+        "type": "Off-shoulder loose ribbed knit sweater.",
+        "color": "Slate grey.",
+        "details": "Fine knit texture, slouchy oversized style.",
+        "effect": "Reveals collarbones and one bare shoulder."
+      },
+      "bottom": {
+        "type": "Matching knit shorts.",
+        "color": "Slate grey.",
+        "details": "Soft lounge fabric."
+      }
+    },
+    "accessories": {
+      "prop": "Glass mug filled with steaming tea held between her hands."
+    },
+    "photography": {
+      "camera_style": "Cinematic indoor photography style.",
+      "angle": "Eye-level from side angle.",
+      "shot_type": "Medium shot.",
+      "aspect_ratio": "16:9",
+      "texture": "Fine grain, cinematic grading, soft shadow contrast.",
+      "lighting": "Natural overcast daylight through window pane, mixed with warm interior light (warm fill with cool key).",
+      "depth_of_field": "Shallow depth, sharp details on subject, window rain droplets blurred."
+    },
+    "background": {
+      "setting": "Cozy apartment window sill.",
+      "wall_color": "Soft cream/beige walls.",
+      "elements": [
+        "Glass window pane covered in condensation and rain droplets",
+        "Soft string lights glowing warm in the room background",
+        "A small green potted fern",
+        "Stack of books next to cushion"
+      ],
+      "atmosphere": "Moody, nostalgic, peaceful, rainy day.",
+      "lighting": "Diffused rainy daylight mixed with indoor ambient."
+    },
+    "the_vibe": {
+      "energy": "Peaceful, introspective.",
+      "mood": "Cozy nostalgia on a rainy day.",
+      "aesthetic": "Lo-fi lifestyle, cinematic color grading, moody indoor atmosphere.",
+      "authenticity": "High candid slice-of-life feel.",
+      "intimacy": "High, private sanctuary feel.",
+      "story": "Watching the rain fall while sipping hot tea in her room.",
+      "caption_energy": "Rainy days call for hot tea. / Quiet thoughts."
+    },
+    "constraints": {
+      "must_keep": [
+        "Off-shoulder slate grey sweater",
+        "Knees-to-chest pose",
+        "Raindrops on window pane",
+        "Steaming mug"
+      ],
+      "avoid": [
+        "Direct camera gaze",
+        "Bright sunny lighting",
+        "Studio background",
+        "Formal clothing"
+      ]
+    },
+    "negative_prompt": [
+      "looking at camera",
+      "sunny day",
+      "studio strobe",
+      "perfect posing",
+      "saturated colors",
+      "outdoor street",
+      "messy details"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Chinatown Street Snap Night Vibe",
+    "subject": {
+      "description": "Young East Asian woman, stylish urban aesthetic, neon-noir street style.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Direct, confident gaze into the lens.",
+          "energy": "Intriguing, sharp.",
+          "direction": "Straight at camera."
+        },
+        "mouth": {
+          "position": "Slightly parted, glossy lips.",
+          "energy": "Confident, cool."
+        },
+        "overall": "Mysterious, urban chic."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Vibrant night makeup, winged eyeliner, bold red glossy lipstick, high gloss highlights on nose."
+      }
+    },
+    "hair": {
+      "color": "Black with subtle blue highlights",
+      "style": "Sleek straight bob cut with flat bangs.",
+      "effect": "Reflecting colorful neon street lamps."
+    },
+    "body": {
+      "frame": "Slim, tall.",
+      "waist": "Defined by tight crop jacket.",
+      "chest": "Average, stylish contour.",
+      "legs": "Not fully visible, wearing baggy cargos.",
+      "skin": {
+        "visible_areas": "Face, neck, midriff.",
+        "tone": "Fair porcelain.",
+        "texture": "Smooth, wet look skin sheen.",
+        "lighting_effect": "Vibrant red and cyan neon lighting reflecting on her skin."
+      }
+    },
+    "pose": {
+      "position": "Standing on a wet city sidewalk.",
+      "base": "Leaning back slightly against a metal sign post.",
+      "overall": "Hands tucked into cargo pockets, shoulder tilted forward towards camera."
+    },
+    "clothing": {
+      "top": {
+        "type": "Black leather crop puffer jacket over a tiny black crop top.",
+        "color": "Black.",
+        "details": "Shiny vinyl texture, silver zipper accents.",
+        "effect": "Form-fitting crop, revealing midriff."
+      },
+      "bottom": {
+        "type": "Baggy techwear cargo pants.",
+        "color": "Dark grey.",
+        "details": "Multiple straps and utility pockets."
+      }
+    },
+    "accessories": {
+      "prop": "Chunky silver choker, small silver chain hanging from waist."
+    },
+    "photography": {
+      "camera_style": "DSLR night street photography.",
+      "angle": "Eye-level shot.",
+      "shot_type": "Medium portrait shot (hip up).",
+      "aspect_ratio": "2:3",
+      "texture": "Vibrant color grading, high contrast, crisp detail.",
+      "lighting": "Dramatic artificial night lighting, strong red/cyan neon reflections, wet pavement bouncing light.",
+      "depth_of_field": "Shallow depth, crisp subject focus, background city lights blurred into circular neon bokeh."
+    },
+    "background": {
+      "setting": "Chinatown street at rainy night.",
+      "wall_color": "Brick and metal shop fronts.",
+      "elements": [
+        "Glowing Chinese neon shop signs in red and green",
+        "Wet asphalt pavement with colorful reflections",
+        "Distant blurred pedestrians under umbrellas",
+        "Steam rising from a noodle stall ventilation"
+      ],
+      "atmosphere": "Vibrant, moody, crowded, cyberpunk aesthetic.",
+      "lighting": "Neon glow, city ambient light."
+    },
+    "the_vibe": {
+      "energy": "Cool, magnetic, edgy.",
+      "mood": "Intriguing city night walk.",
+      "aesthetic": "Neon noir, techwear style, cyberpunk street photography.",
+      "authenticity": "High, candid night snap feel.",
+      "intimacy": "Direct connection, striking.",
+      "story": "Walking through Chinatown after a midnight rain shower.",
+      "caption_energy": "Chasing neon. / City nights."
+    },
+    "constraints": {
+      "must_keep": [
+        "Black leather puffer crop",
+        "Winged liner and bold red lip",
+        "Chinese neon sign reflections on wet floor",
+        "Cyberpunk color grading"
+      ],
+      "avoid": [
+        "Daylight",
+        "Indoor studio setting",
+        "Soft pastel colors",
+        "Happy smiling face"
+      ]
+    },
+    "negative_prompt": [
+      "daylight",
+      "studio flash",
+      "soft lighting",
+      "pastel colors",
+      "rural background",
+      "smiling",
+      "suburban"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "High Fashion Studio Presentation",
+    "subject": {
+      "description": "Young East Asian fashion model, high-fashion editorial aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Piercing, intense look directly into lens.",
+          "energy": "Powerful, aloof.",
+          "direction": "Directly forward."
+        },
+        "mouth": {
+          "position": "Closed, neutral, relaxed.",
+          "energy": "Cold, calm."
+        },
+        "overall": "Editorial, high-fashion coldness, statuesque."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Avant-garde editorial makeup, sharp graphic eyeliner, glossy nude lips, structured matte contouring."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "Slicked-back high ponytail, sleek and polished.",
+      "effect": "No loose strands, clean structured silhouette."
+    },
+    "body": {
+      "frame": "Fashion model, very slender, long limbs.",
+      "waist": "Extremely narrow, defined.",
+      "chest": "Small, high-fashion build.",
+      "legs": "Long, athletic legs emphasized by high-heeled boots.",
+      "skin": {
+        "visible_areas": "Face, neck, collarbone, bare arms.",
+        "tone": "Pale, ivory.",
+        "texture": "Matte, poreless, structured.",
+        "lighting_effect": "Strong directional key light from top left creates sharp shadows on cheekbones and clavicles."
+      }
+    },
+    "pose": {
+      "position": "Standing, centered in frame.",
+      "base": "Asymmetric stance, one foot stepped forward, back arched slightly.",
+      "overall": "One hand placed firmly on hip, other arm hanging loose. Bold structured geometry."
+    },
+    "clothing": {
+      "top": {
+        "type": "Structured crop top blazer with exaggerated shoulder pads.",
+        "color": "Monochrome charcoal grey.",
+        "details": "Heavy wool fabric, raw edge details, high cropped cut.",
+        "effect": "Extremely form-fitting, emphasizing shoulders."
+      },
+      "bottom": {
+        "type": "High-waist asymmetrical drape skirt.",
+        "color": "Matching charcoal grey.",
+        "details": "Heavy structure, overlapping folds."
+      }
+    },
+    "accessories": {
+      "prop": "Chunky architectural silver earrings, thigh-high black leather stiletto boots."
+    },
+    "photography": {
+      "camera_style": "Professional studio fashion photography.",
+      "angle": "Slight low angle looking up to empower subject.",
+      "shot_type": "Full body studio shot.",
+      "aspect_ratio": "2:3",
+      "texture": "Extremely high resolution, sharp focus on fabric weave and metallic jewelry, clean digital medium format look.",
+      "lighting": "High-contrast studio lighting, hard key light (Beauty Dish), clean soft fill, deep controlled shadows.",
+      "depth_of_field": "Deep focus, entire outfit from earrings to boots is tack sharp."
+    },
+    "background": {
+      "setting": "Studio set.",
+      "wall_color": "Solid neutral concrete grey backdrop.",
+      "elements": [
+        "Cast shadow of the subject on the background wall"
+      ],
+      "atmosphere": "Minimalist, luxury, clean, commercial studio.",
+      "lighting": "Controlled artificial studio setup."
+    },
+    "the_vibe": {
+      "energy": "Intense, powerful, cold, commanding.",
+      "mood": "Avant-garde editorial.",
+      "aesthetic": "High-fashion lookbook, monochrome structural minimalism.",
+      "authenticity": "Staged studio shoot.",
+      "intimacy": "Distant, professional model gaze.",
+      "story": "Modeling for a luxury designer's winter collection catalog.",
+      "caption_energy": "Editorial. / Volume I."
+    },
+    "constraints": {
+      "must_keep": [
+        "Monochrome grey structured blazer",
+        "Exaggerated shoulder pads",
+        "Slicked-back high ponytail",
+        "Deep contrast concrete shadows"
+      ],
+      "avoid": [
+        "Happy facial expressions",
+        "Messy hair",
+        "Natural outdoor setting",
+        "Soft window light"
+      ]
+    },
+    "negative_prompt": [
+      "outdoors",
+      "smiling",
+      "messy hair",
+      "natural lighting",
+      "amateur photography",
+      "colorful background",
+      "distorted fingers"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Gym Workout Mirror Selfie",
+    "subject": {
+      "description": "Young Asian gym girl, active sporty lifestyle aesthetic.",
+      "mirror_rules": "Phone held centrally in right hand, partially obscuring the lower face.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Looking down into the smartphone screen reflection.",
+          "energy": "Focused, determined.",
+          "direction": "At mirror/phone screen."
+        },
+        "mouth": {
+          "position": "Relaxed, slightly parted lips.",
+          "energy": "Neutral, post-workout breathe."
+        },
+        "overall": "Casual, focused fitness post."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Minimal sweat-resistant base, fresh flushed cheeks, natural glossy lip."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "High ponytail, sleek top with slight loose strands framing forehead.",
+      "effect": "Slightly damp from workout, tied back cleanly."
+    },
+    "body": {
+      "frame": "Athletic, toned abs, defined shoulders, curvy hips.",
+      "waist": "Very slim, toned abdominal definition visible.",
+      "chest": "Medium, compressed by sports bra.",
+      "legs": "Toned thighs, curvy hips highlighted by tight leggings.",
+      "skin": {
+        "visible_areas": "Arms, shoulders, upper chest, exposed midriff/abs, face.",
+        "tone": "Fair, healthy glow.",
+        "texture": "Smooth, with a light sweat sheen catching the light.",
+        "lighting_effect": "Bright gym lighting highlight defining muscle tone and curves."
+      }
+    },
+    "pose": {
+      "position": "Standing in front of a gym mirror.",
+      "base": "One hip jutted out, weight shifted, creating curved posture.",
+      "overall": "Right hand holding smartphone to take the selfie, left hand resting on thigh."
+    },
+    "clothing": {
+      "top": {
+        "type": "Racerback sports bra.",
+        "color": "Charcoal grey.",
+        "details": "Ribbed elastic fabric, form-fitting crop.",
+        "effect": "Reveals abs and shoulders."
+      },
+      "bottom": {
+        "type": "High-waist workout leggings.",
+        "color": "Black.",
+        "details": "Matte athletic spandex, compression fit."
+      }
+    },
+    "accessories": {
+      "device": "Smartphone in a sleek black protective case."
+    },
+    "photography": {
+      "camera_style": "Smartphone mirror selfie.",
+      "angle": "Straight on at chest level.",
+      "shot_type": "Medium shot (thighs up).",
+      "aspect_ratio": "9:16",
+      "texture": "Candid digital quality, minor reflection glares.",
+      "lighting": "Bright overhead commercial lights (gym lighting).",
+      "depth_of_field": "Moderate depth, background gym equipment readable but slightly soft."
+    },
+    "background": {
+      "setting": "Gym fitness studio interior.",
+      "wall_color": "Grey walls with mirrors.",
+      "elements": [
+        "Dumbbell rack in background",
+        "Treadmills slightly blurred",
+        "Warm studio spotlights",
+        "Metal pillars"
+      ],
+      "atmosphere": "Active, industrial gym, bright, energetic.",
+      "lighting": "Commercial bright indoor spotlights."
+    },
+    "the_vibe": {
+      "energy": "Energetic, fit, disciplined.",
+      "mood": "Healthy routine, body pride.",
+      "aesthetic": "Activewear model, fitness influencer, candid workout log.",
+      "authenticity": "High candid mirror photo feel.",
+      "intimacy": "Personal fitness progress share.",
+      "story": "Taking a quick snap to document abs progress after a leg day.",
+      "caption_energy": "Post-workout glow. / Sweat session."
+    },
+    "constraints": {
+      "must_keep": [
+        "Toned abs showing",
+        "Sports bra and leggings",
+        "Gym mirror background with dumbbells",
+        "Ponytail"
+      ],
+      "avoid": [
+        "Heavy makeup",
+        "Perfect studio lighting",
+        "Formal or loose clothes",
+        "Unnatural posing"
+      ]
+    },
+    "negative_prompt": [
+      "formal clothes",
+      "loose dress",
+      "heavy jewelry",
+      "bright studio strobe",
+      "looking directly into camera",
+      "deformed hand",
+      "highly retouched"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Cozy Apartment Streaming Setup",
+    "subject": {
+      "description": "Young Asian gamer girl, colorful cyber bedroom aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Looking slightly up and smiling towards camera.",
+          "energy": "Playful, bright.",
+          "direction": "Directly at the lens."
+        },
+        "mouth": {
+          "position": "Cute open smile.",
+          "energy": "Happy, lively."
+        },
+        "overall": "Cute, friendly gamer vibe."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Soft cute makeup, peach pink blush under eyes, glittery eye shadows, glossy pink lip tint."
+      }
+    },
+    "hair": {
+      "color": "Soft lavender purple",
+      "style": "Long double braids with loose bangs.",
+      "effect": "Soft texture catching colorful neon glow."
+    },
+    "body": {
+      "frame": "Petite, curvy.",
+      "waist": "Relaxed seated posture.",
+      "chest": "Medium, accentuated by tight crop shirt.",
+      "legs": "Hidden under computer desk.",
+      "skin": {
+        "visible_areas": "Face, neck, shoulders, arms, hands.",
+        "tone": "Pale porcelain skin.",
+        "texture": "Smooth, radiant.",
+        "lighting_effect": "Glowing purple and pink ambient light from computer screens reflecting on skin surfaces."
+      }
+    },
+    "pose": {
+      "position": "Seated in a gaming chair.",
+      "base": "Leaning slightly forward towards desk.",
+      "overall": "One hand adjusting the headset, other hand resting on desk."
+    },
+    "clothing": {
+      "top": {
+        "type": "Short-sleeve tight baby tee.",
+        "color": "White with a cute pastel graphic.",
+        "details": "Cotton fabric, crop cut.",
+        "effect": "Reveals waistline slightly, form-fitting."
+      },
+      "bottom": {
+        "type": "Pastel pleated skirt.",
+        "color": "Lilac.",
+        "details": "Tucked, hidden."
+      }
+    },
+    "accessories": {
+      "headwear": "Pink gaming headset with cat ears.",
+      "prop": "Pink mechanical keyboard glowing in RGB on desk."
+    },
+    "photography": {
+      "camera_style": "Webcam perspective portrait snapshot.",
+      "angle": "Slight high angle, looking down slightly.",
+      "shot_type": "Close-up portrait shot (chest up).",
+      "aspect_ratio": "4:3",
+      "texture": "Soft digital sensor texture, cozy warmth, slight lens flare.",
+      "lighting": "Dim ambient room lights, dominated by pink/blue RGB strips and computer monitor glow.",
+      "depth_of_field": "Shallow depth, sharp focus on face, background room elements softly blurred."
+    },
+    "background": {
+      "setting": "Gamer bedroom stream setup.",
+      "wall_color": "Dark, covered in glowing posters.",
+      "elements": [
+        "Dual computer monitors with anime wallpapers",
+        "Glowing pink neon sign on background wall",
+        "Plush toys lined up on a shelf",
+        "LED strip lights along ceiling"
+      ],
+      "atmosphere": "Cozy, colorful, tech-heavy, youth culture.",
+      "lighting": "RGB LED neon gaming lighting."
+    },
+    "the_vibe": {
+      "energy": "Fun, cute, welcoming, digital.",
+      "mood": "Late night game streaming session.",
+      "aesthetic": "Kawaii gaming room, e-girl style, RGB neon tech lifestyle.",
+      "authenticity": "Authentic webcam stream screenshot look.",
+      "intimacy": "High, parasocial connection feel.",
+      "story": "Greeting her streaming chat before starting a match.",
+      "caption_energy": "Streaming now! 🎮 / Late night gaming."
+    },
+    "constraints": {
+      "must_keep": [
+        "Pink cat-ear headset",
+        "White baby tee crop",
+        "Lavender hair double braids",
+        "RGB computer monitor glow in background"
+      ],
+      "avoid": [
+        "Direct harsh sunlight",
+        "Formal clothing",
+        "Mature professional studio look",
+        "Plain gray backdrop"
+      ]
+    },
+    "negative_prompt": [
+      "daylight",
+      "harsh sun",
+      "formal dress",
+      "mature business look",
+      "monochrome gray background",
+      "professional camera equipment",
+      "stiff model pose"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sunny Beach Bikini Snapshot",
+    "subject": {
+      "description": "Young woman, athletic curvy physique, beach lifestyle aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "ethnicity": "Caucasian",
+      "expression": {
+        "eyes": {
+          "look": "Looking away toward the sea, happy.",
+          "energy": "Vibrant, sun-kissed.",
+          "direction": "Looking off-camera left."
+        },
+        "mouth": {
+          "position": "Laughing, wide smile showing white teeth.",
+          "energy": "Joyful, carefree."
+        },
+        "overall": "Radiant, laughing candidate snapshot."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Waterproof natural makeup, sun-kissed freckles, soft glossy coral lips."
+      }
+    },
+    "hair": {
+      "color": "Sunkissed dark brown",
+      "style": "Long, wet messy waves cascading over shoulders.",
+      "effect": "Blowing slightly in sea wind, reflecting direct sunlight."
+    },
+    "body": {
+      "frame": "Hourglass, athletic toned waist.",
+      "waist": "Very slim, defined abs.",
+      "chest": "Full bust, prominent cleavage.",
+      "legs": "Long, athletic legs, thighs.",
+      "skin": {
+        "visible_areas": "Full body, midriff, thighs, arms, chest.",
+        "tone": "Tanned, sun-kissed.",
+        "texture": "Real skin texture with pores and fine water droplets.",
+        "lighting_effect": "Direct harsh midday sunlight creating bright highlights on collarbone and wet skin sheen."
+      }
+    },
+    "pose": {
+      "position": "Standing ankle-deep in clear turquoise seawater.",
+      "base": "Weight shifted to one side, leaning back slightly.",
+      "overall": "One hand pushing hair back behind the ear, other arm relaxed at her side."
+    },
+    "clothing": {
+      "top": {
+        "type": "Triangle string bikini top.",
+        "color": "Shiny vinyl black.",
+        "details": "Minimal coverage, strings tying around neck.",
+        "effect": "Form-fitting, revealing curves."
+      },
+      "bottom": {
+        "type": "High-cut micro string bikini bottom.",
+        "color": "Shiny vinyl black.",
+        "details": "Thin side ties pulled high over hips."
+      }
+    },
+    "accessories": {
+      "jewelry": [
+        "Delicate gold chain necklace",
+        "Small gold bangles on left wrist"
+      ]
+    },
+    "photography": {
+      "camera_style": "Mobile phone outdoor snapshot style.",
+      "angle": "Worm's-eye view looking up.",
+      "shot_type": "Full body shot.",
+      "aspect_ratio": "9:16",
+      "texture": "Sharp digital detail, high contrast, sun flare details.",
+      "lighting": "Harsh direct sunlight, ambient sky blue bounce.",
+      "depth_of_field": "Deep focus on subject, distant ocean waves slightly softened."
+    },
+    "background": {
+      "setting": "Outdoors, tropical sunny beach.",
+      "wall_color": "Clear cerulean blue sky background.",
+      "elements": [
+        "Turquoise crystal ocean waves in background",
+        "Bright white sandy shoreline",
+        "Sun flare in top left corner"
+      ],
+      "atmosphere": "Tropical, summer, bright, refreshing.",
+      "lighting": "Natural direct sunlight."
+    },
+    "the_vibe": {
+      "energy": "Vibrant, happy, active.",
+      "mood": "Joyful beach vacation day.",
+      "aesthetic": "Summer swimwear, active beach life, sun-drenched realism.",
+      "authenticity": "High unretouched outdoor candid photo look.",
+      "intimacy": "Close, friendly.",
+      "story": "Laughing as a wave splashed against her feet.",
+      "caption_energy": "Summer days. 🌊 / Salty air."
+    },
+    "constraints": {
+      "must_keep": [
+        "Black vinyl micro bikini",
+        "Tanned skin with water droplets",
+        "Laughing facial expression",
+        "Worm's-eye angle with blue sky background"
+      ],
+      "avoid": [
+        "Studio indoor background",
+        "Cozy winter clothes",
+        "Serious model look",
+        "Soft diffused lighting"
+      ]
+    },
+    "negative_prompt": [
+      "indoors",
+      "studio lighting",
+      "winter clothes",
+      "serious face",
+      "soft light",
+      "low resolution",
+      "bad anatomy",
+      "extra fingers"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Cozy Library Vintage Reading",
+    "subject": {
+      "description": "Young woman, elegant classic aesthetic, dark academia style.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Looking up from a book towards the camera.",
+          "energy": "Intellectual, calm, mysterious.",
+          "direction": "Directly into lens."
+        },
+        "mouth": {
+          "position": "Closed, soft neutral.",
+          "energy": "Gentle, calm."
+        },
+        "overall": "Elegant, focused, quiet intelligence."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Classic style makeup, matte base, warm brown eyeshadow, matte brick-red lipstick."
+      }
+    },
+    "hair": {
+      "color": "Deep chestnut brown",
+      "style": "Wavy hair with side bangs, partially pinned back.",
+      "effect": "Polished, vintage look."
+    },
+    "body": {
+      "frame": "Slender.",
+      "waist": "Defined by tucked clothing.",
+      "chest": "Medium, covered.",
+      "legs": "Hidden behind table.",
+      "skin": {
+        "visible_areas": "Face, neck, hands.",
+        "tone": "Fair, warm ivory skin tone.",
+        "texture": "Smooth, matte texture.",
+        "lighting_effect": "Warm directional lamp light casting soft shadows on her face."
+      }
+    },
+    "pose": {
+      "position": "Seated at a vintage library desk.",
+      "base": "Leaning one cheek against her hand (elbow on table).",
+      "overall": "Other hand resting on an open vintage leather-bound book. Comfortable classic pose."
+    },
+    "clothing": {
+      "top": {
+        "type": "Victorian style lace-collar blouse under a brown tweed vest.",
+        "color": "White and brown.",
+        "details": "Lace details on cuffs and collar, structured woolen vest.",
+        "effect": "Layered classic look."
+      },
+      "bottom": {
+        "type": "Tweed pleated midi skirt.",
+        "color": "Dark brown.",
+        "details": "Heavy fabric."
+      }
+    },
+    "accessories": {
+      "prop": "Vintage green glass Banker's lamp glowing on desk."
+    },
+    "photography": {
+      "camera_style": "Classic DSLR film photo style.",
+      "angle": "Eye-level straight portrait.",
+      "shot_type": "Medium portrait shot (waist up).",
+      "aspect_ratio": "4:5",
+      "texture": "Rich organic film grain, warm tones, high shadow detail.",
+      "lighting": "Warm desk lamp light acting as key light, soft ambient fill from background library.",
+      "depth_of_field": "Shallow depth, book shelves in background blurred into warm circle bokeh."
+    },
+    "background": {
+      "setting": "Grand old library interior.",
+      "wall_color": "Dark oak wood paneling.",
+      "elements": [
+        "Tall oak bookshelves filled with leather-bound books",
+        "Ornate wooden desk",
+        "Glowing green Banker's lamp on desk",
+        "Warm vintage carpet texture in distant background"
+      ],
+      "atmosphere": "Quiet, cozy, mysterious, dark academia.",
+      "lighting": "Warm cozy indoor ambient light."
+    },
+    "the_vibe": {
+      "energy": "Intelligent, calm, cozy.",
+      "mood": "Quiet evening research in archives.",
+      "aesthetic": "Dark academia, classic vintage, cozy library.",
+      "authenticity": "High unposed film portrait look.",
+      "intimacy": "Close, welcoming.",
+      "story": "Researching history in the university library archives late at night.",
+      "caption_energy": "Library nights. 📚 / Vintage thoughts."
+    },
+    "constraints": {
+      "must_keep": [
+        "Tweed vest and lace collar",
+        "Open vintage book on desk",
+        "Banker's lamp green glow",
+        "Warm film grain color grade"
+      ],
+      "avoid": [
+        "Modern technology",
+        "Casual athletic wear",
+        "Bright daylight",
+        "Neon lights"
+      ]
+    },
+    "negative_prompt": [
+      "smartphone",
+      "laptop",
+      "modern digital devices",
+      "daylight",
+      "neon lights",
+      "sportswear",
+      "casual crop top",
+      "distorted fingers"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Luxury Lounge Night Out Cocktail",
+    "subject": {
+      "description": "Young woman, elegant glamorous aesthetic, upscale nightlife.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Alluring, half-lidded gaze off-camera.",
+          "energy": "Bright, relaxed.",
+          "direction": "Looking off-camera to the left."
+        },
+        "mouth": {
+          "position": "Soft smirk, lips slightly parted.",
+          "energy": "Flirtatious, warm."
+        },
+        "overall": "Genuine, relaxed candid nightlife reaction."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "East Asian dewy glow makeup, soft flushed cheeks, glossy burgundy lips, subtle highlighter."
+      }
+    },
+    "hair": {
+      "color": "Dark brown/black",
+      "style": "Mid-length, casually parted with soft wispy bangs.",
+      "effect": "Soft, reflecting warm ambient lamp light."
+    },
+    "body": {
+      "frame": "Slender with curvy hourglass upper body.",
+      "waist": "Relaxed posture.",
+      "chest": "Extremely prominent, deep cleavage exposed.",
+      "legs": "Hidden behind bar counter.",
+      "skin": {
+        "visible_areas": "Deep chest, shoulders, neck, collarbone, forearms.",
+        "tone": "Very fair, pale, luminous.",
+        "texture": "Smooth, feels velvety and hydrated.",
+        "lighting_effect": "Soft frontal highlight emphasizing chest volume and smooth collarbones."
+      }
+    },
+    "pose": {
+      "position": "Seated at a bar counter, leaning slightly forward.",
+      "base": "Resting arms on wooden counter.",
+      "overall": "Dynamic candid posture, laughing mid-conversation, hands adjusting cardigan."
+    },
+    "clothing": {
+      "top": {
+        "type": "Black plunging halter top under a chunky white knit cardigan.",
+        "color": "Black and white.",
+        "details": "Plunging scoop neckline; cardigan draped loosely off-shoulders.",
+        "effect": "Reveals chest and bare shoulders in contrast."
+      },
+      "bottom": {
+        "type": "Matching black skirt.",
+        "color": "Black.",
+        "details": "Out of frame."
+      }
+    },
+    "accessories": {
+      "jewelry": [
+        "Delicate silver choker"
+      ]
+    },
+    "photography": {
+      "camera_style": "Smartphone night snapshot, casual candid portrait.",
+      "angle": "Eye-level, slightly high angle.",
+      "shot_type": "Close up (chest up).",
+      "aspect_ratio": "3:4",
+      "texture": "Slight digital noise, motion blur on hands, raw phone flash feel.",
+      "lighting": "Low ambient light with soft frontal fill/flash.",
+      "depth_of_field": "Shallow, subject in focus, background blurred."
+    },
+    "background": {
+      "setting": "Dimly lit luxury bar or lounge counter.",
+      "wall_color": "Dark, shadowy tones.",
+      "elements": [
+        "Dark wooden bar counter",
+        "Partially filled glass with cocktail",
+        "Blurred background figures of lounge patrons",
+        "Bottles on shelves with backlighting"
+      ],
+      "atmosphere": "Moody, intimate, relaxed nightlife, premium.",
+      "lighting": "Warm dim ambient lights."
+    },
+    "the_vibe": {
+      "energy": "Lively, flirtatious yet wholesome.",
+      "mood": "Happy night out, high spirits.",
+      "aesthetic": "Late-night casual snapshot, luxury socialite aesthetic.",
+      "authenticity": "High, unposed candid moment.",
+      "intimacy": "Close social distance.",
+      "story": "Laughing at a joke mid-conversation with friends.",
+      "caption_energy": "Drinks and good times. 🥂 / Cheers."
+    },
+    "constraints": {
+      "must_keep": [
+        "Plunging black top",
+        "Slouching white cardigan off bare shoulders",
+        "Candid smile off-camera",
+        "Bar glass with cocktail"
+      ],
+      "avoid": [
+        "Stiff posing",
+        "Perfect studio lighting",
+        "Modest high neckline",
+        "Looking directly at camera"
+      ]
+    },
+    "negative_prompt": [
+      "stiff posing",
+      "formal portrait",
+      "studio strobe",
+      "looking at camera",
+      "flat light",
+      "unnatural expressions",
+      "high collar dress"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Elevator Mirror Selfie Casual",
+    "subject": {
+      "description": "Young Asian woman, casual everyday aesthetic, mirror snapshot.",
+      "mirror_rules": "Right hand holding smartphone centrally; flash glare partially covers the upper face.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Looking up towards mirror reflection.",
+          "energy": "Focused, alluring.",
+          "direction": "Straight ahead into mirror."
+        },
+        "mouth": {
+          "position": "Closed, relaxed.",
+          "energy": "Neutral, casual."
+        },
+        "overall": "Casual, intimate confidence."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Glossy berry lipstick, subtle contour, fresh base."
+      }
+    },
+    "hair": {
+      "color": "Medium brown",
+      "style": "Long, straight hair parted in the middle.",
+      "effect": "Smooth, draped behind the holding arm."
+    },
+    "body": {
+      "frame": "Slender, long limbs.",
+      "waist": "Narrow, defined by pants waistline.",
+      "chest": "Partially visible side profile.",
+      "legs": "Long legs, visible in elevator mirror.",
+      "skin": {
+        "visible_areas": "Hands, wrists, neck, face.",
+        "tone": "Fair, natural light.",
+        "texture": "Smooth skin.",
+        "lighting_effect": "Harsh direct on-camera flash bouncing off mirror surface."
+      }
+    },
+    "pose": {
+      "position": "Standing inside an elevator.",
+      "base": "Weight shifted to left leg, hip jutted out.",
+      "overall": "Right hand holding phone taking mirror selfie, left hand in jacket pocket."
+    },
+    "clothing": {
+      "top": {
+        "type": "Black cropped zipper hoodie over white tank crop.",
+        "color": "Black and white.",
+        "details": "Zip detail, loose cropped fit.",
+        "effect": "Form-fitting tank visible under hoodie."
+      },
+      "bottom": {
+        "type": "High-waist denim cargo jeans.",
+        "color": "Washed light blue.",
+        "details": "Relaxed utility pockets."
+      }
+    },
+    "accessories": {
+      "device": "Dark smartphone in a grey silicon case."
+    },
+    "photography": {
+      "camera_style": "Smartphone mirror selfie.",
+      "angle": "Eye-level to mirror, straight on.",
+      "shot_type": "Full body mirror framing.",
+      "aspect_ratio": "9:16",
+      "texture": "Raw snapshot, slight noise in dark areas, high contrast.",
+      "lighting": "Harsh direct on-camera flash, blinding starburst glare at center, sharp cast shadows.",
+      "depth_of_field": "Deep focus, everything from denim to mirror reflection is sharp."
+    },
+    "background": {
+      "setting": "Inside a modern passenger elevator.",
+      "wall_color": "Brushed stainless steel metal panels.",
+      "elements": [
+        "Elevator buttons panel on the right",
+        "Metal handrails behind subject",
+        "Ceiling LED panel indicator showing floor numbers",
+        "Reflection of elevator interior in back mirror"
+      ],
+      "atmosphere": "Late-night, mundane daily transition, raw, unpolished.",
+      "lighting": "Cold commercial elevator ceiling light and camera flash."
+    },
+    "the_vibe": {
+      "energy": "Provocative, raw, casual.",
+      "mood": "Late-night transition, homebound.",
+      "aesthetic": "Flash-bang realism, amateur social media aesthetic.",
+      "authenticity": "High, accidental framing with blinding flash glare.",
+      "intimacy": "Very close, voyeuristic.",
+      "story": "Taking a quick elevator mirror selfie while heading back home late night.",
+      "caption_energy": "Going home. / Elevator logs."
+    },
+    "constraints": {
+      "must_keep": [
+        "Blinding flash glare in elevator mirror",
+        "Denim jeans and crop tank combo",
+        "Stainless steel elevator panel background",
+        "Hip-jutted stance"
+      ],
+      "avoid": [
+        "Soft studio lighting",
+        "Centered smile looking at camera",
+        "Formal evening gown",
+        "Blurry background"
+      ]
+    },
+    "negative_prompt": [
+      "soft light",
+      "studio setup",
+      "professional retouching",
+      "centered face looking at camera",
+      "modest evening gown",
+      "flat lighting",
+      "3d render"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Ancient Temple Hanfu Traditional Garden",
+    "subject": {
+      "description": "Young East Asian woman in traditional Hanfu costume, cultural fantasy aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Gentle, gazing downwards in quiet contemplation.",
+          "energy": "Serene, tranquil.",
+          "direction": "Looking downward-right."
+        },
+        "mouth": {
+          "position": "Closed, neutral.",
+          "energy": "Calm, soft."
+        },
+        "overall": "Poetic, serene, traditional elegance."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Traditional Chinese style makeup, soft matte base, cherry red lip smudge, delicate red floral pattern painted between eyebrows (Huadian)."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "Traditional styled half-updo with cascading long waves, decorated with jade pins.",
+      "effect": "Graceful strands catching golden sun rays."
+    },
+    "body": {
+      "frame": "Slender, delicate.",
+      "waist": "Defined by embroidered silk waistband.",
+      "chest": "Covered by layered cross-collar robes.",
+      "legs": "Hidden under long flowing silk skirt layers.",
+      "skin": {
+        "visible_areas": "Face, neck, hands.",
+        "tone": "Fair, porcelain.",
+        "texture": "Smooth, powdery finish.",
+        "lighting_effect": "Warm golden hour light filtering through trees, lighting the side of her face and neck."
+      }
+    },
+    "pose": {
+      "position": "Standing next to a stone pagoda bridge.",
+      "base": "Back straight, holding a traditional round silk fan.",
+      "overall": "Holding fan up to chest level with both hands, body turned slightly sideways."
+    },
+    "clothing": {
+      "top": {
+        "type": "Layered flowing silk Hanfu robes.",
+        "color": "Pastel pink and white.",
+        "details": "Exquisite floral embroidery along collar sleeves, flowing translucent fabrics.",
+        "effect": "Lightweight, fluttering in wind."
+      },
+      "bottom": {
+        "type": "Matching pleated maxi silk skirt.",
+        "color": "Pale pink.",
+        "details": "Floor-length, sweeping draping."
+      }
+    },
+    "accessories": {
+      "headwear": "Jade pins and red tassels in hair.",
+      "prop": "Round silk fan with hand-painted crane illustration."
+    },
+    "photography": {
+      "camera_style": "Cinematic outdoor portrait photography.",
+      "angle": "Eye-level, slightly side profile angle.",
+      "shot_type": "Medium-full shot.",
+      "aspect_ratio": "3:4",
+      "texture": "High detail, organic texture, rich warm tones.",
+      "lighting": "Golden hour sun backlighting, creating a glowing rim light along her hair and flowing robes.",
+      "depth_of_field": "Shallow depth (135mm f/2.0 portrait lens look), temple garden background softly blurred."
+    },
+    "background": {
+      "setting": "Traditional Chinese garden with ancient temple structure.",
+      "wall_color": "Vermillion red temple walls in background.",
+      "elements": [
+        "Stone bridge and pond edge",
+        "Pink blooming cherry blossom branch in foreground",
+        "Vermillion red wooden temple pillars",
+        "Ancient stone pagoda outline in distant background"
+      ],
+      "atmosphere": "Poetic, historical, serene, magical golden hour.",
+      "lighting": "Warm natural golden hour sunset light."
+    },
+    "the_vibe": {
+      "energy": "Graceful, classic, quiet, elegant.",
+      "mood": "Nostalgic fantasy storybook illustration.",
+      "aesthetic": "Traditional Hanfu, ancient Chinese style, ink-wash painting undertones.",
+      "authenticity": "Polished high-art portrait shoot.",
+      "intimacy": "Observational, artistic distance.",
+      "story": "Walking through the imperial gardens in search of spring blossoms.",
+      "caption_energy": "Spring blossoms. 🌸 / Hanfu diaries."
+    },
+    "constraints": {
+      "must_keep": [
+        "Layered pink and white Hanfu silk robes",
+        "Embroidered details on collar",
+        "Traditional round silk fan",
+        "Huadian face makeup"
+      ],
+      "avoid": [
+        "Modern background objects",
+        "Casual jeans or t-shirts",
+        "Industrial building texture",
+        "Smartphone device"
+      ]
+    },
+    "negative_prompt": [
+      "modern technology",
+      "jeans",
+      "t-shirt",
+      "smartphone",
+      "cars in background",
+      "suburban houses",
+      "glasses",
+      "flat flash light"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Cozy Bedroom Morning Selfie",
+    "subject": {
+      "description": "Young Asian woman, natural morning aesthetic, cozy bedroom lifestyle.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Looking directly into the camera lens, sleepy but bright.",
+          "energy": "Warm, affectionate.",
+          "direction": "Directly at reader."
+        },
+        "mouth": {
+          "position": "Cute soft smile.",
+          "energy": "Warm, happy."
+        },
+        "overall": "Cozy, relaxed morning wake-up."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Barely-there natural makeup, soft pink flushed cheeks, glossy nude lips, hydrated glowing skin."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "Long, messy bed-head waves draping over shoulders.",
+      "effect": "Soft, natural volume, slightly uncombed."
+    },
+    "body": {
+      "frame": "Hourglass, petite waist.",
+      "waist": "Soft curves resting.",
+      "chest": "Full chest contour highlighted by tight tank.",
+      "legs": "Out of frame, covered by duvet.",
+      "skin": {
+        "visible_areas": "Face, neck, collarbone, bare shoulders, arms.",
+        "tone": "Fair, pale skin.",
+        "texture": "Luminous dewy skin texture with natural pores visible.",
+        "lighting_effect": "Warm morning sunlight filtering in from window casting soft sunbeam highlights on skin."
+      }
+    },
+    "pose": {
+      "position": "Reclining in bed, propped up on elbows.",
+      "base": "Leaning back on plush white pillows.",
+      "overall": "Holding camera with right hand for a first-person POV selfie, left hand pulling the white duvet cover up to chest."
+    },
+    "clothing": {
+      "top": {
+        "type": "Spaghetti strap ribbed crop tank top.",
+        "color": "White.",
+        "details": "Ribbed cotton fabric, stretchy fit.",
+        "effect": "Form-fitting, revealing shoulders and chest."
+      },
+      "bottom": {
+        "type": "Flannel pajama shorts.",
+        "color": "Pink and white plaid.",
+        "details": "Mostly hidden under white duvet."
+      }
+    },
+    "accessories": {
+      "prop": "Fluffy white duvet cover and feather pillows."
+    },
+    "photography": {
+      "camera_style": "Smartphone front-camera candid snapshot.",
+      "angle": "Slight high angle looking down.",
+      "shot_type": "Close-up selfie portrait shot (chest up).",
+      "aspect_ratio": "9:16",
+      "texture": "Digital snapshot quality, warm sunlight flare, candid realism.",
+      "lighting": "Warm morning window light, soft window diffused glow.",
+      "depth_of_field": "Shallow depth, sharp focus on eyes, background bed details and pillows softly blurred."
+    },
+    "background": {
+      "setting": "Cozy domestic bedroom setup.",
+      "wall_color": "Soft off-white plaster wall.",
+      "elements": [
+        "White tufted headboard",
+        "Overhead warm sunbeam stream",
+        "Sunlight reflecting on bed linen",
+        "Blurred bedside plant leaf"
+      ],
+      "atmosphere": "Cozy, intimate, peaceful, warm morning.",
+      "lighting": "Natural morning sunlight."
+    },
+    "the_vibe": {
+      "energy": "Warm, cozy, intimate.",
+      "mood": "Lazy morning in bed, waking up slowly.",
+      "aesthetic": "Soft girl, bedroom lifestyle, lazy morning snap.",
+      "authenticity": "High authentic morning look.",
+      "intimacy": "Very high, intimate couple's POV.",
+      "story": "Taking a quick photo after waking up on a sunny Sunday morning.",
+      "caption_energy": "Good morning. ☀️ / Lazy sundays."
+    },
+    "constraints": {
+      "must_keep": [
+        "Messy bed-head hair",
+        "Spaghetti strap white tank crop",
+        "White duvet cover pulled up",
+        "Warm morning window sunbeam"
+      ],
+      "avoid": [
+        "Perfect studio strobe",
+        "Dark heavy makeup",
+        "Formal dress wear",
+        "Looking away from lens"
+      ]
+    },
+    "negative_prompt": [
+      "studio light",
+      "heavy makeup",
+      "formal gown",
+      "looking away",
+      "dark room",
+      "perfect hair",
+      "watermark",
+      "bad hands"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Urban Coffee Outdoor Cafe",
+    "subject": {
+      "description": "Young Asian woman, chic city lifestyle aesthetic, street snap look.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Looking away toward the street, laughing.",
+          "energy": "Bright, happy.",
+          "direction": "Looking off-frame right."
+        },
+        "mouth": {
+          "position": "Open smile, teeth showing.",
+          "energy": "Joyful, mid-laugh."
+        },
+        "overall": "Candid joyful laugh, unposed street moment."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "East Asian clean beauty style, dewy base, soft peach blush, coral lip gloss."
+      }
+    },
+    "hair": {
+      "color": "Ash brown",
+      "style": "Long wavy hair with curtain bangs, blowing slightly in breeze.",
+      "effect": "Soft texture catching golden sunlight."
+    },
+    "body": {
+      "frame": "Hourglass, slender waist.",
+      "waist": "Defined, narrow waist.",
+      "chest": "Full, highlighted by form-fitting knit sweater.",
+      "legs": "Not fully visible, thighs seated.",
+      "skin": {
+        "visible_areas": "Hands, wrists, face, neck, collarbone.",
+        "tone": "Fair, warm ivory.",
+        "texture": "Smooth, natural skin texture.",
+        "lighting_effect": "Warm golden hour sunlight highlighting her face and shoulders."
+      }
+    },
+    "pose": {
+      "position": "Seated at an outdoor cafe table.",
+      "base": "Leaning back in metal chair.",
+      "overall": "One hand holding a takeaway coffee cup, other hand gesturing near face mid-laugh."
+    },
+    "clothing": {
+      "top": {
+        "type": "Form-fitting ribbed knit sweater with a sweetheart neck.",
+        "color": "Warm beige.",
+        "details": "Ribbed vertical lines, tight fit.",
+        "effect": "Stretching tightly over chest, sweetheart neckline revealing collarbones."
+      },
+      "bottom": {
+        "type": "High-waist white trousers.",
+        "color": "White.",
+        "details": "Cotton fabric."
+      }
+    },
+    "accessories": {
+      "prop": "Clear glasses sitting on table, paper takeaway coffee cup."
+    },
+    "photography": {
+      "camera_style": "DSLR street portrait photography.",
+      "angle": "Eye-level candid shot.",
+      "shot_type": "Medium portrait shot (waist up).",
+      "aspect_ratio": "3:4",
+      "texture": "Crisp digital quality, warm golden color grading, slight lens flare.",
+      "lighting": "Golden hour sun filtering, warm backlight, soft front fill.",
+      "depth_of_field": "Shallow depth of field (85mm f/1.4 lens), background city sidewalk and cafe blurred."
+    },
+    "background": {
+      "setting": "Outdoor European-style cafe sidewalk.",
+      "wall_color": "Brick shopfront background.",
+      "elements": [
+        "Round metal cafe table",
+        "Green potted street plants",
+        "Sidewalk pedestrian zone blurred",
+        "Warm golden hour sun flare"
+      ],
+      "atmosphere": "Relaxed, chic, lifestyle, bright sun.",
+      "lighting": "Natural golden hour sunlight."
+    },
+    "the_vibe": {
+      "energy": "Lively, happy, warm, chic.",
+      "mood": "Sunny weekend coffee date.",
+      "aesthetic": "Chic lifestyle, urban candid, golden hour sun-kissed.",
+      "authenticity": "High unposed candid snapshot look.",
+      "intimacy": "Close, sitting across from table.",
+      "story": "Laughing at a friend's joke during a weekend brunch at a sidewalk cafe.",
+      "caption_energy": "Weekend coffee runs. ☕ / Sunkissed."
+    },
+    "constraints": {
+      "must_keep": [
+        "Ribbed beige sweetheart knit sweater",
+        "Takeaway paper coffee cup",
+        "Golden hour rim light and sun flare",
+        "Open candid smile"
+      ],
+      "avoid": [
+        "Studio indoor flash",
+        "Serious high fashion look",
+        "Looking directly at lens",
+        "Heavy dark makeup"
+      ]
+    },
+    "negative_prompt": [
+      "studio setup",
+      "dark room",
+      "serious face",
+      "looking at camera",
+      "heavy makeup",
+      "winter coat",
+      "bad anatomy"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Cosplay Boudoir Bunny Casino Room",
+    "subject": {
+      "description": "Young Asian woman in boudoir bunny cosplay, sultry lifestyle aesthetic.",
+      "mirror_rules": "None.",
+      "age": "Early 20s",
+      "expression": {
+        "eyes": {
+          "look": "Alluring, sultry gaze directly into camera, wearing red contacts.",
+          "energy": "Seductive, relaxed.",
+          "direction": "Directly into camera lens."
+        },
+        "mouth": {
+          "position": "Slightly parted, glossy wet look lips.",
+          "energy": "Soft, inviting."
+        },
+        "overall": "Sultry, confident, intimate."
+      },
+      "face": {
+        "preserve_original": "True",
+        "makeup": "Cosplay glam style, pale porcelain base, red contact lenses, soft glittery eyeshadow, red lip gloss, heavy cheek blush."
+      }
+    },
+    "hair": {
+      "color": "Black",
+      "style": "Long straight hair with choppy bangs and face-framing side bangs.",
+      "effect": "Messy strands catching warm rim lights."
+    },
+    "body": {
+      "frame": "Hourglass, voluptuous curves.",
+      "waist": "Narrow, defined.",
+      "chest": "Full bust, prominent cleavage highlighted.",
+      "legs": "Thighs visible, wearing red stockings.",
+      "skin": {
+        "visible_areas": "Face, neck, bare shoulders, deep cleavage, midriff, upper thighs.",
+        "tone": "Fair, pale milky white.",
+        "texture": "Smooth, velvety, moisturized.",
+        "lighting_effect": "Warm specular highlights on chest and shoulders, soft shadows defining shape."
+      }
+    },
+    "pose": {
+      "position": "Reclining diagonally against a couch.",
+      "base": "Leaning back on a brown leather couch cushion.",
+      "overall": "Torso angled slightly upward, one hand resting near stomach, knees bent, legs sweeping backward."
+    },
+    "clothing": {
+      "top": {
+        "type": "Triangle red lace bikini top.",
+        "color": "Red.",
+        "details": "Clear plastic shoulder straps, detached red lace arm warmers.",
+        "effect": "Form-fitting, revealing cleavage."
+      },
+      "bottom": {
+        "type": "Red string bikini bottom.",
+        "color": "Red.",
+        "details": "Thin side strings, paired with red thigh-high stockings."
+      }
+    },
+    "accessories": {
+      "headwear": "Tall red lace bunny ears headband.",
+      "jewelry": "Red fabric choker collar.",
+      "prop": "Scattered blue casino chips on the leather couch surface next to her."
+    },
+    "photography": {
+      "camera_style": "Cinematic portrait, casual boudoir photography.",
+      "angle": "High angle looking down, Dutch tilt horizontal slope.",
+      "shot_type": "Medium-full shot.",
+      "aspect_ratio": "3:2",
+      "texture": "Rich detail, slight film grain, soft focus contrast with sharp skin highlights.",
+      "lighting": "Warm cinematic indoor lighting, soft amber ambient glow, key light from top right.",
+      "depth_of_field": "Shallow depth of field (85mm f/1.4 look), background walls softly blurred."
+    },
+    "background": {
+      "setting": "Upscale retro hotel room casino suite.",
+      "wall_color": "Warm gold and textured brown.",
+      "elements": [
+        "Worn brown leather couch cushion in foreground",
+        "Scattered casino chips",
+        "Blurred patterned retro wallpaper"
+      ],
+      "atmosphere": "Warm, intimate, luxurious, private casino room.",
+      "lighting": "Dim ambient gold hotel lighting."
+    },
+    "the_vibe": {
+      "energy": "Seductive, relaxed, wealthy.",
+      "mood": "Late-night casino suite games, intimate relaxation.",
+      "aesthetic": "Cosplay boudoir, casino bunny theme, rich retro aesthetic.",
+      "authenticity": "High candid feel, messy hair strands catching rim light.",
+      "intimacy": "Close, high connection.",
+      "story": "Resting during a private photoshoot in a vintage hotel room.",
+      "caption_energy": "Late night games. 🎲 / Red bunny."
+    },
+    "constraints": {
+      "must_keep": [
+        "Red lace bunny ears",
+        "Red lace bikini and clear straps",
+        "Scattered casino chips on leather couch",
+        "Dutch tilt composition"
+      ],
+      "avoid": [
+        "Flat daylighting",
+        "Modest casual wear",
+        "Standard straight horizontal angle",
+        "Cold daylight colors"
+      ]
+    },
+    "negative_prompt": [
+      "flat light",
+      "matte skin",
+      "straight horizontal framing",
+      "outdoors",
+      "daylight",
+      "jeans",
+      "loose clothing",
+      "poor anatomy"
+    ]
+  }
+]
