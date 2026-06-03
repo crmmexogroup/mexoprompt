@@ -184,7 +184,7 @@
       "aspect_ratio": "3:4",
       "texture": "Organic, soft film grain.",
       "lighting": "Soft window light (diffused and natural).",
-      "depth_of_field": "Shallow depth of field (85mm f/1.8 lens effect), creamy bokeh of cafe details behind."
+      "depth_of_field": "Shallow depth of field (85mm f/1.8 lens effect), soft out-of-focus background blur of cafe details behind."
     },
     "background": {
       "setting": "Cozy bookstore cafe interior.",
@@ -383,7 +383,7 @@
       "legs": "Not fully visible, wearing baggy cargos.",
       "skin": {
         "visible_areas": "Face, neck, midriff.",
-        "tone": "Fair porcelain.",
+        "tone": "pale fair skin with natural warm undertones.",
         "texture": "Smooth, wet look skin sheen.",
         "lighting_effect": "Vibrant red and cyan neon lighting reflecting on her skin."
       }
@@ -728,7 +728,7 @@
       "legs": "Hidden under computer desk.",
       "skin": {
         "visible_areas": "Face, neck, shoulders, arms, hands.",
-        "tone": "Pale porcelain skin.",
+        "tone": "pale fair skin.",
         "texture": "Smooth, radiant.",
         "lighting_effect": "Glowing purple and pink ambient light from computer screens reflecting on skin surfaces."
       }
@@ -1316,7 +1316,7 @@
       "legs": "Hidden under long flowing silk skirt layers.",
       "skin": {
         "visible_areas": "Face, neck, hands.",
-        "tone": "Fair, porcelain.",
+        "tone": "pale fair skin with natural warm undertones.",
         "texture": "Smooth, powdery finish.",
         "lighting_effect": "Warm golden hour light filtering through trees, lighting the side of her face and neck."
       }
@@ -1652,7 +1652,7 @@
       },
       "face": {
         "preserve_original": "True",
-        "makeup": "Cosplay glam style, pale porcelain base, red contact lenses, soft glittery eyeshadow, red lip gloss, heavy cheek blush."
+        "makeup": "Cosplay glam style, pale fair skin base, red contact lenses, soft glittery eyeshadow, red lip gloss, heavy cheek blush."
       }
     },
     "hair": {
