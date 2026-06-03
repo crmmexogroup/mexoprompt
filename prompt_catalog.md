@@ -106,12 +106,12 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
 | Mịn màng | `naturally smooth healthy skin, clean pores` | ◑ |
-| Kết cấu tự nhiên | `raw skin texture, natural skin details, visible pores, unretouched` | ◑ |
-| Lỗ chân lông | `realistic visible skin pores, highly detailed skin texture, micro-details` | ◑ |
-| Lông tơ tự nhiên | `fine vellus hair, peach fuzz on skin, realistic skin pores` | ◑ |
+| Kết cấu tự nhiên | `raw skin texture, natural skin details, natural pores, unretouched` | ◑ |
+| Lỗ chân lông | `realistic skin texture with natural pores, micro-details` | ◑ |
+| Lông tơ tự nhiên | `realistic skin texture with natural pores and fine vellus hair` | ◑ |
 | Tàn nhang | `natural freckles on nose and cheeks` | ◑ |
 | Nốt ruồi son | `subtle beauty marks, raw skin` | ◑ |
-| Ảnh mộc (Raw) | `raw photo quality, realistic skin goosebumps and pores, unretouched` | ◑ |
+| Ảnh mộc (Raw) | `raw photo quality, realistic skin texture with natural pores, unretouched` | ◑ |
 
 ---
 
@@ -297,7 +297,7 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔹 Nhóm phân nhánh: Đứng (ID: `pose_standing`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Nhóm cha liên kết |
 | --- | --- | --- |
-| Nhìn thẳng | `Front facing pose` | `pose` |
+| Nhìn thẳng | `Natural relaxed standing pose` | `pose` |
 | Góc ba phần tư | `Three quarter pose` | `pose` |
 | Nhìn lại | `Looking back pose` | `pose` |
 | Đang đi | `Walking pose` | `pose` |
@@ -473,8 +473,8 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Hiệu ứng ống kính (ID: `cameraEffects`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Lấy nét cực nét (Tack Sharp) | `tack sharp focus, high local contrast, detailed skin texture, visible pores, zero smoothing` | ⌖ |
-| Độ sắc nét cao (Zoom-in Clarity) | `extreme close-up on skin texture, macro photo of pores and vellus hair, unretouched, zoom-in clarity, high-fidelity micro-details` | ⌖ |
+| Lấy nét cực nét (Tack Sharp) | `natural sharp focus, balanced contrast, realistic skin texture with natural pores, minimal skin smoothing` | ⌖ |
+| Độ sắc nét cao (Zoom-in Clarity) | `candid close-up on skin texture, unretouched, natural skin pores, high-fidelity micro-details` | ⌖ |
 | Xóa phông mạnh (Shallow DoF) | `shallow depth of field` | ⌖ |
 | Hiệu ứng Bokeh lung linh | `bokeh depth of field` | ⌖ |
 | Lóe sáng ống kính (Lens Flare) | `lens flare effect` | ⌖ |

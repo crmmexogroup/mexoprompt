@@ -16,8 +16,8 @@ const QUALITY_LEVELS = [
 const QUALITY_KEYWORDS = {
   basic:    "raw photo, realistic skin texture, sharp focus,",
   detailed: "highly detailed, raw photo, realistic skin texture with fine pores, natural hair strands, sharp focus,",
-  pro:      "highly detailed, raw photo quality, realistic skin texture with visible pores, natural hair strands, authentic fabric physics, tack sharp focus, cinematic lighting, professional composition, unretouched,",
-  extreme:  "raw photo, hyper-detailed skin texture, realistic skin pores and fine wrinkles, natural hair strands individually rendered, authentic fabric physics, tack sharp focus, cinematic lighting, professional composition, realistic color science, realistic exposure, 35mm film grain, unretouched, candid snapshot quality,",
+  pro:      "highly detailed, raw photo quality, realistic skin texture with natural pores, natural hair strands, authentic fabric physics, natural sharp focus, cinematic lighting, professional composition, unretouched,",
+  extreme:  "raw photo, realistic skin texture with natural pores, natural hair strands individually rendered, authentic fabric physics, natural sharp focus, cinematic lighting, professional composition, realistic color science, realistic exposure, 35mm film grain, unretouched, candid snapshot quality,",
 };
 
 const DOUYIN_PRESET = {
@@ -239,12 +239,12 @@ const SECTIONS = [
         multi:false,
         items:[
           {vi:"Mịn màng",       en:"naturally smooth healthy skin, clean pores",          img:"", icon:"◑"},
-          {vi:"Kết cấu tự nhiên",en:"raw skin texture, natural skin details, visible pores, unretouched", img:"", icon:"◑"},
-          {vi:"Lỗ chân lông",   en:"realistic visible skin pores, highly detailed skin texture, micro-details",   img:"", icon:"◑"},
-          {vi:"Lông tơ tự nhiên",en:"fine vellus hair, peach fuzz on skin, realistic skin pores", img:"", icon:"◑"},
+          {vi:"Kết cấu tự nhiên",en:"raw skin texture, natural skin details, natural pores, unretouched", img:"", icon:"◑"},
+          {vi:"Lỗ chân lông",   en:"realistic skin texture with natural pores, micro-details",   img:"", icon:"◑"},
+          {vi:"Lông tơ tự nhiên",en:"realistic skin texture with natural pores and fine vellus hair", img:"", icon:"◑"},
           {vi:"Tàn nhang",      en:"natural freckles on nose and cheeks",        img:"", icon:"◑"},
           {vi:"Nốt ruồi son",   en:"subtle beauty marks, raw skin",    img:"", icon:"◑"},
-          {vi:"Ảnh mộc (Raw)",  en:"raw photo quality, realistic skin goosebumps and pores, unretouched", img:"", icon:"◑"}
+          {vi:"Ảnh mộc (Raw)",  en:"raw photo quality, realistic skin texture with natural pores, unretouched", img:"", icon:"◑"}
         ]
       },
     ]
@@ -462,7 +462,7 @@ const SECTIONS = [
       {
         id:"pose_standing", vi:"Đứng", en:"Standing Poses", icon:"◈",
         items:[
-          {vi:"Nhìn thẳng",         en:"Front facing pose",          img:"assets/pose/stand_front.jpg",    catId:"pose"},
+          {vi:"Nhìn thẳng",         en:"Natural relaxed standing pose",          img:"assets/pose/stand_front.jpg",    catId:"pose"},
           {vi:"Góc ba phần tư",     en:"Three quarter pose",         img:"assets/pose/stand_3q.jpg",       catId:"pose"},
           {vi:"Nhìn lại",           en:"Looking back pose",          img:"assets/pose/stand_back.jpg",     catId:"pose"},
           {vi:"Đang đi",            en:"Walking pose",               img:"assets/pose/stand_walking.jpg",  catId:"pose"},
@@ -664,8 +664,8 @@ const SECTIONS = [
         id: "cameraEffects", vi: "Hiệu ứng ống kính", en: "Camera & Lens Effects",
         multi: false,
         items: [
-          {vi: "Lấy nét cực nét (Tack Sharp)", en: "tack sharp focus, high local contrast, detailed skin texture, visible pores, zero smoothing", icon: "⌖"},
-          {vi: "Độ sắc nét cao (Zoom-in Clarity)", en: "extreme close-up on skin texture, macro photo of pores and vellus hair, unretouched, zoom-in clarity, high-fidelity micro-details", icon: "⌖"},
+          {vi: "Lấy nét cực nét (Tack Sharp)", en: "natural sharp focus, balanced contrast, realistic skin texture with natural pores, minimal skin smoothing", icon: "⌖"},
+          {vi: "Độ sắc nét cao (Zoom-in Clarity)", en: "candid close-up on skin texture, unretouched, natural skin pores, high-fidelity micro-details", icon: "⌖"},
           {vi: "Xóa phông mạnh (Shallow DoF)", en: "shallow depth of field", icon: "⌖"},
           {vi: "Hiệu ứng Bokeh lung linh", en: "bokeh depth of field", icon: "⌖"},
           {vi: "Lóe sáng ống kính (Lens Flare)", en: "lens flare effect", icon: "⌖"},
