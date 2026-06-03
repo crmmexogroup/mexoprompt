@@ -176,12 +176,12 @@ const SECTIONS = [
         id:"eyes", vi:"Đôi mắt", en:"Eyes",
         multi:false,
         items:[
-          {vi:"To",           en:"Large",         img:"assets/eyes/large.jpg",    icon:"◎"},
-          {vi:"Hạnh nhân",    en:"Almond",        img:"assets/eyes/almond.jpg",   icon:"◎"},
-          {vi:"Lười biếng",   en:"Sleepy",        img:"assets/eyes/sleepy.jpg",   icon:"◎"},
-          {vi:"Sắc sảo",      en:"Sharp",         img:"assets/eyes/sharp.jpg",    icon:"◎"},
-          {vi:"Mắt mèo",      en:"Cat Eyes",      img:"assets/eyes/cat.jpg",      icon:"◎"},
-          {vi:"Trong sáng",   en:"Innocent Eyes", img:"assets/eyes/innocent.jpg", icon:"◎"},
+          {vi:"To",           en:"naturally large double-eyelid eyes", img:"assets/eyes/large.jpg",    icon:"◎"},
+          {vi:"Hạnh nhân",    en:"almond-shaped eyes",        img:"assets/eyes/almond.jpg",   icon:"◎"},
+          {vi:"Lười biếng",   en:"soft relaxed eyes",        img:"assets/eyes/sleepy.jpg",   icon:"◎"},
+          {vi:"Sắc sảo",      en:"sharp focused eyes",      img:"assets/eyes/sharp.jpg",    icon:"◎"},
+          {vi:"Mắt mèo",      en:"captivating cat eyes",      img:"assets/eyes/cat.jpg",      icon:"◎"},
+          {vi:"Trong sáng",   en:"gentle innocent eyes", img:"assets/eyes/innocent.jpg", icon:"◎"},
         ]
       },
       {
@@ -203,19 +203,19 @@ const SECTIONS = [
         id:"makeup", vi:"Trang điểm", en:"Makeup",
         multi:false,
         items:[
-          {vi:"Tự nhiên",      en:"Natural",     img:"assets/makeup/natural.jpg",     icon:"✦"},
-          {vi:"Douyin",        en:"Douyin",      img:"assets/makeup/douyin.jpg",      icon:"✦"},
-          {vi:"Hàn Quốc",      en:"Korean",      img:"assets/makeup/korean.jpg",      icon:"✦"},
-          {vi:"Sang trọng",    en:"Luxury",      img:"assets/makeup/luxury.jpg",      icon:"✦"},
-          {vi:"Soft Glam",     en:"Soft Glam",   img:"assets/makeup/softglam.jpg",    icon:"✦"},
-          {vi:"Phong cách Idol", en:"Idol Style",img:"assets/makeup/idol.jpg",        icon:"✦"},
+          {vi:"Tự nhiên",      en:"minimal natural makeup, realistic skin finish",     img:"assets/makeup/natural.jpg",     icon:"✦"},
+          {vi:"Douyin",        en:"subtle Douyin makeup style, soft matte finish",      img:"assets/makeup/douyin.jpg",      icon:"✦"},
+          {vi:"Hàn Quốc",      en:"Korean natural makeup style",      img:"assets/makeup/korean.jpg",      icon:"✦"},
+          {vi:"Sang trọng",    en:"elegant clean makeup",      img:"assets/makeup/luxury.jpg",      icon:"✦"},
+          {vi:"Soft Glam",     en:"soft glam makeup, natural skin finish",   img:"assets/makeup/softglam.jpg",    icon:"✦"},
+          {vi:"Phong cách Idol", en:"pop idol stage makeup",img:"assets/makeup/idol.jpg",        icon:"✦"},
         ]
       },
       {
         id:"skin", vi:"Màu da", en:"Skin Tone",
         multi:false,
         items:[
-          {vi:"Trắng sứ",     en:"Pale Porcelain", img:"assets/skin/pale.jpg",   icon:"◐"},
+          {vi:"Trắng sứ",     en:"pale fair skin with natural warm undertones", img:"assets/skin/pale.jpg",   icon:"◐"},
           {vi:"Trắng",        en:"Fair",           img:"assets/skin/fair.jpg",   icon:"◐"},
           {vi:"Beige tự nhiên",en:"Natural Beige", img:"assets/skin/beige.jpg",  icon:"◐"},
           {vi:"Ngà ấm",       en:"Warm Ivory",     img:"assets/skin/ivory.jpg",  icon:"◐"},
@@ -227,7 +227,7 @@ const SECTIONS = [
         id:"skinDetail", vi:"Chi tiết da", en:"Skin Detail",
         multi:false,
         items:[
-          {vi:"Mịn màng",       en:"smooth clean skin",          img:"", icon:"◑"},
+          {vi:"Mịn màng",       en:"naturally smooth healthy skin, clean pores",          img:"", icon:"◑"},
           {vi:"Kết cấu tự nhiên",en:"raw skin texture, natural skin details, visible pores, unretouched", img:"", icon:"◑"},
           {vi:"Lỗ chân lông",   en:"realistic visible skin pores, highly detailed skin texture, micro-details",   img:"", icon:"◑"},
           {vi:"Lông tơ tự nhiên",en:"fine vellus hair, peach fuzz on skin, realistic skin pores", img:"", icon:"◑"},
@@ -319,10 +319,10 @@ const SECTIONS = [
         id:"bust", vi:"Vòng 1", en:"Bust",
         multi:false,
         items:[
-          {vi:"Nhỏ",   en:"Small bust",  img:"", icon:"◇"},
-          {vi:"Vừa",   en:"Medium bust", img:"", icon:"◇"},
-          {vi:"Đầy",   en:"Full bust",   img:"", icon:"◇"},
-          {vi:"Lớn",   en:"Large bust",  img:"", icon:"◇"},
+          {vi:"Nhỏ",   en:"natural small bust",  img:"", icon:"◇"},
+          {vi:"Vừa",   en:"natural medium bust", img:"", icon:"◇"},
+          {vi:"Đầy",   en:"natural full bust",   img:"", icon:"◇"},
+          {vi:"Lớn",   en:"natural large bust",  img:"", icon:"◇"},
         ]
       },
       {
@@ -892,7 +892,7 @@ function buildJsonPrompt() {
 
   const dofStr = (s.cameraEffects && (s.cameraEffects.includes("bokeh") || s.cameraEffects.includes("depth"))) ||
                  (s.lens && (s.lens.includes("85mm") || s.lens.includes("50mm") || s.lens.includes("135mm"))) 
-                 ? "Shallow depth of field, creamy background bokeh." 
+                 ? "shallow depth of field, natural out-of-focus background blur." 
                  : "Moderate depth of field, keeping background readable.";
 
   const locationSetting = s.location || "Cozy, realistic setting.";

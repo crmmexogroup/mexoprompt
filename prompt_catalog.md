@@ -62,12 +62,12 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Đôi mắt (ID: `eyes`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| To | `Large` | ◎ |
-| Hạnh nhân | `Almond` | ◎ |
-| Lười biếng | `Sleepy` | ◎ |
-| Sắc sảo | `Sharp` | ◎ |
-| Mắt mèo | `Cat Eyes` | ◎ |
-| Trong sáng | `Innocent Eyes` | ◎ |
+| To | `naturally large double-eyelid eyes` | ◎ |
+| Hạnh nhân | `almond-shaped eyes` | ◎ |
+| Lười biếng | `soft relaxed eyes` | ◎ |
+| Sắc sảo | `sharp focused eyes` | ◎ |
+| Mắt mèo | `captivating cat eyes` | ◎ |
+| Trong sáng | `gentle innocent eyes` | ◎ |
 
 ### 🔸 Nhóm thuộc tính: Biểu cảm (ID: `expression`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
@@ -85,17 +85,17 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Trang điểm (ID: `makeup`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Tự nhiên | `Natural` | ✦ |
-| Douyin | `Douyin` | ✦ |
-| Hàn Quốc | `Korean` | ✦ |
-| Sang trọng | `Luxury` | ✦ |
-| Soft Glam | `Soft Glam` | ✦ |
-| Phong cách Idol | `Idol Style` | ✦ |
+| Tự nhiên | `minimal natural makeup, realistic skin finish` | ✦ |
+| Douyin | `subtle Douyin makeup style, soft matte finish` | ✦ |
+| Hàn Quốc | `Korean natural makeup style` | ✦ |
+| Sang trọng | `elegant clean makeup` | ✦ |
+| Soft Glam | `soft glam makeup, natural skin finish` | ✦ |
+| Phong cách Idol | `pop idol stage makeup` | ✦ |
 
 ### 🔸 Nhóm thuộc tính: Màu da (ID: `skin`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Trắng sứ | `Pale Porcelain` | ◐ |
+| Trắng sứ | `pale fair skin with natural warm undertones` | ◐ |
 | Trắng | `Fair` | ◐ |
 | Beige tự nhiên | `Natural Beige` | ◐ |
 | Ngà ấm | `Warm Ivory` | ◐ |
@@ -105,7 +105,7 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Chi tiết da (ID: `skinDetail`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Mịn màng | `smooth clean skin` | ◑ |
+| Mịn màng | `naturally smooth healthy skin, clean pores` | ◑ |
 | Kết cấu tự nhiên | `raw skin texture, natural skin details, visible pores, unretouched` | ◑ |
 | Lỗ chân lông | `realistic visible skin pores, highly detailed skin texture, micro-details` | ◑ |
 | Lông tơ tự nhiên | `fine vellus hair, peach fuzz on skin, realistic skin pores` | ◑ |
@@ -184,10 +184,10 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Vòng 1 (ID: `bust`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Nhỏ | `Small bust` | ◇ |
-| Vừa | `Medium bust` | ◇ |
-| Đầy | `Full bust` | ◇ |
-| Lớn | `Large bust` | ◇ |
+| Nhỏ | `natural small bust` | ◇ |
+| Vừa | `natural medium bust` | ◇ |
+| Đầy | `natural full bust` | ◇ |
+| Lớn | `natural large bust` | ◇ |
 
 ### 🔸 Nhóm thuộc tính: Hông (ID: `hips`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
