@@ -31,84 +31,71 @@ const DOUYIN_PRESET = {
 // ── CONFLICT CONFIG ──────────────────────────────────────────────
 const CONFLICT_RULES = [
   {
-    id: "light_day_night",
+    id: "light_indoor_outdoor",
     type: "lighting",
-    label: "Xung đột Ánh sáng (Ngày vs Đêm)",
-    desc: "Bạn đang chọn kết hợp ánh sáng ngày và đêm. AI dễ tạo ảnh mờ sương, thiếu chân thực.",
+    label: "Xung đột Ánh sáng & Địa điểm",
+    desc: "Bạn đang chọn ánh sáng trong nhà (Soft Window Light, Studio, Cafe Light) kết hợp với địa điểm ngoài trời tự nhiên (Beach, Mountain, Forest, Park). AI sẽ dễ tạo ảnh bị mờ sương và phi thực tế.",
     check: (s) => {
-      const day = ["natural light", "golden hour", "direct sunlight", "magic hour", "midday"];
-      const night = ["night street", "neon lighting", "light from a single candle", "street lamp glare", "street light halos", "rainy night"];
-      const hasDay = s.lighting && day.some(k => s.lighting.toLowerCase().includes(k));
-      const hasNight = s.lighting && night.some(k => s.lighting.toLowerCase().includes(k));
-      return hasDay && hasNight;
-    }
-  },
-  {
-    id: "light_natural_studio",
-    type: "lighting",
-    label: "Xung đột Nguồn sáng (Tự nhiên vs Studio)",
-    desc: "Bạn đang chọn cả Ánh sáng tự nhiên và Studio Softbox/Strobe. Điều này có thể làm giảm tính candid, khiến da dễ bị bóng nhựa.",
-    check: (s) => {
-      const natural = ["natural light", "golden hour", "soft window light", "direct sunlight"];
-      const studio = ["studio softbox", "studio strobe", "hard studio light", "beauty dish", "octabox"];
-      const hasNat = s.lighting && natural.some(k => s.lighting.toLowerCase().includes(k));
-      const hasStu = s.lighting && studio.some(k => s.lighting.toLowerCase().includes(k));
-      return hasNat && hasStu;
-    }
-  },
-  {
-    id: "focus_depth",
-    type: "camera",
-    label: "Xung đột Độ sâu trường ảnh",
-    desc: "Bạn đang kết hợp Xóa phông mạnh (Shallow DoF/Bokeh) và Lấy nét sâu (Deep Focus/Infinity). AI sẽ bị xung đột tiêu cự và render ảnh bị soft/nhòe.",
-    check: (s) => {
-      const shallow = s.cameraEffects && (s.cameraEffects.includes("shallow") || s.cameraEffects.includes("bokeh") || s.cameraEffects.includes("aperture f/1.2"));
-      const deep = s.cameraEffects && (s.cameraEffects.includes("deep") || s.cameraEffects.includes("infinity") || s.cameraEffects.includes("f/8.0"));
-      return shallow && deep;
-    }
-  },
-  {
-    id: "shot_angle_overhead_worm",
-    type: "camera",
-    label: "Xung đột Góc chụp",
-    desc: "Bạn đang chọn góc nhìn từ dưới đất lên (Worm's-eye) cùng lúc với góc nhìn từ trên trời xuống (Bird's-eye/Overhead). AI sẽ không xác định được hướng máy ảnh.",
-    check: (s) => {
-      const worm = s.cameraAngle && s.cameraAngle.toLowerCase().includes("worm");
-      const bird = s.cameraAngle && (s.cameraAngle.toLowerCase().includes("bird") || s.cameraAngle.toLowerCase().includes("overhead") || s.cameraAngle.toLowerCase().includes("ceiling"));
-      return worm && bird;
-    }
-  },
-  {
-    id: "shot_framing_clash",
-    type: "camera",
-    label: "Xung đột Khung hình",
-    desc: "Bạn đang kết hợp Cận cảnh cực độ (Extreme Close-Up) với Toàn thân (Full Body shot) hoặc góc quay cực xa. AI sẽ bị rối tỷ lệ cơ thể.",
-    check: (s) => {
-      const close = s.shotType && (s.shotType.toLowerCase().includes("close") || s.shotType.toLowerCase().includes("cận"));
-      const far = s.shotType && (s.shotType.toLowerCase().includes("full") || s.shotType.toLowerCase().includes("long") || s.shotType.toLowerCase().includes("distant"));
-      return close && far;
+      const indoor = ["window", "softbox", "cafe light", "studio strobe", "beauty dish", "octabox", "single candle"];
+      const outdoor = ["beach setting", "mountain setting", "forest setting", "park setting"];
+      const hasIndoorLight = s.lighting && indoor.some(k => s.lighting.toLowerCase().includes(k));
+      const hasOutdoorLoc = s.location && outdoor.some(k => s.location.toLowerCase().includes(k));
+      return hasIndoorLight && hasOutdoorLoc;
     }
   },
   {
     id: "lens_wide_tele",
     type: "camera",
     label: "Xung đột Tiêu cự ống kính",
-    desc: "Bạn chọn tiêu cự góc rộng (24mm/35mm) nhưng kết hợp với hiệu ứng ống kính Telephoto. AI sẽ tạo ra phối cảnh méo mó.",
+    desc: "Bạn đang chọn ống kính Góc rộng (24mm/35mm) nhưng kết hợp với hiệu ứng ống kính Telephoto hoặc nén không gian. AI sẽ tạo ra phối cảnh méo mó.",
     check: (s) => {
-      const wide = s.lens && (s.lens.includes("24mm") || s.lens.includes("35mm") || s.lens.toLowerCase().includes("wide"));
-      const tele = s.lens && (s.lens.includes("135mm") || s.lens.toLowerCase().includes("tele"));
-      return wide && tele;
+      const hasWide = s.lens && (s.lens.includes("24mm") || s.lens.includes("35mm"));
+      const hasTele = s.cameraEffects && s.cameraEffects.toLowerCase().includes("telephoto");
+      return hasWide && hasTele;
     }
   },
   {
-    id: "camera_brand_smartphone",
+    id: "selfie_tele_clash",
     type: "camera",
-    label: "Xung đột Thiết bị",
-    desc: "Bạn chọn chụp bằng Smartphone nhưng lại ghép với hiệu ứng thấu kính của máy chuyên nghiệp (RED Gemini, Arri Alexa, DSLR).",
+    label: "Xung đột Selfie & Ống kính",
+    desc: "Bạn chọn chụp ảnh Selfie nhưng lại dùng ống kính Telephoto (135mm). Trong thực tế, không thể chụp selfie bằng ống kính tele tầm xa.",
     check: (s) => {
-      const smart = s.cameraType && s.cameraType.toLowerCase().includes("smart");
-      const prof = s.cameraType && (s.cameraType.toLowerCase().includes("dslr") || s.cameraType.toLowerCase().includes("mirrorless") || s.cameraType.toLowerCase().includes("red") || s.cameraType.toLowerCase().includes("arri"));
-      return smart && prof;
+      const isSelfie = s.pose && s.pose.toLowerCase().includes("selfie");
+      const isTeleLens = s.lens && s.lens.includes("135mm");
+      return isSelfie && isTeleLens;
+    }
+  },
+  {
+    id: "fullbody_closeup_clash",
+    type: "camera",
+    label: "Xung đột Cỡ cảnh & Chi tiết da",
+    desc: "Bạn đang chọn cỡ cảnh Toàn thân (Full Body) nhưng lại kết hợp với hiệu ứng Zoom cận cảnh chi tiết da (Zoom-in Clarity). AI sẽ bị rối tỷ lệ lấy nét.",
+    check: (s) => {
+      const isFull = s.shotType && s.shotType.toLowerCase().includes("full");
+      const isZoomClarity = s.cameraEffects && s.cameraEffects.toLowerCase().includes("extreme close-up");
+      return isFull && isZoomClarity;
+    }
+  },
+  {
+    id: "closeup_wide_clash",
+    type: "camera",
+    label: "Xung đột Góc rộng & Cận cảnh",
+    desc: "Bạn đang chọn cỡ cảnh Cận cảnh cực độ (Extreme Close-Up) kết hợp với ống kính góc rộng (24mm). Ống kính góc rộng sẽ làm méo mó khuôn mặt khi chụp quá sát.",
+    check: (s) => {
+      const isClose = s.shotType && s.shotType.toLowerCase().includes("extreme close");
+      const isWide = s.lens && s.lens.includes("24mm");
+      return isClose && isWide;
+    }
+  },
+  {
+    id: "smartphone_pro_lens",
+    type: "camera",
+    label: "Xung đột Thiết bị & Thấu kính",
+    desc: "Bạn chọn chụp bằng Smartphone nhưng lại ghép với hiệu ứng thấu kính của máy ảnh điện ảnh chuyên nghiệp (RED Gemini, Arri Alexa, khẩu độ f/1.2).",
+    check: (s) => {
+      const isSmart = s.cameraType && s.cameraType.toLowerCase().includes("smart");
+      const isProLens = s.cameraEffects && (s.cameraEffects.toLowerCase().includes("f/1.2") || s.cameraEffects.toLowerCase().includes("red gemini") || s.cameraEffects.toLowerCase().includes("arri alexa"));
+      return isSmart && isProLens;
     }
   }
 ];
