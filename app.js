@@ -97,6 +97,17 @@ const CONFLICT_RULES = [
       const isProLens = s.cameraEffects && (s.cameraEffects.toLowerCase().includes("f/1.2") || s.cameraEffects.toLowerCase().includes("red gemini") || s.cameraEffects.toLowerCase().includes("arri alexa"));
       return isSmart && isProLens;
     }
+  },
+  {
+    id: "fullbody_bokeh_clash",
+    type: "camera",
+    label: "Xung đột Toàn thân & Xóa phông mạnh",
+    desc: "Bạn đang chọn cỡ cảnh Toàn thân (Full Body) nhưng lại kết hợp với hiệu ứng xóa phông quá mạnh. AI sẽ dễ làm mờ phần rìa cơ thể, chân tay và các chi tiết quần áo.",
+    check: (s) => {
+      const isFull = s.shotType && s.shotType.toLowerCase().includes("full");
+      const hasBokeh = s.cameraEffects && (s.cameraEffects.toLowerCase().includes("bokeh") || s.cameraEffects.toLowerCase().includes("shallow"));
+      return isFull && hasBokeh;
+    }
   }
 ];
 
@@ -579,7 +590,7 @@ const SECTIONS = [
       {
         id:"lighting_group", vi:"Ánh sáng", en:"Lighting", icon:"☀",
         items:[
-          {vi:"Ánh sáng tự nhiên", en:"Natural Light",       img:"assets/light/natural.jpg",   catId:"lighting"},
+          {vi:"Ánh sáng tự nhiên", en:"Direct natural daylight, crisp lighting, balanced contrast", img:"assets/light/natural.jpg",   catId:"lighting"},
           {vi:"Giờ vàng",          en:"Golden Hour",         img:"assets/light/golden.jpg",    catId:"lighting"},
           {vi:"Ánh cửa sổ mềm",    en:"Soft Window Light",  img:"assets/light/window.jpg",    catId:"lighting"},
           {vi:"Studio Softbox",    en:"Studio Softbox",      img:"assets/light/softbox.jpg",   catId:"lighting"},
@@ -614,9 +625,9 @@ const SECTIONS = [
         id:"cameraType", vi:"Loại máy", en:"Camera Type",
         multi:false,
         items:[
-          {vi:"Điện thoại thông minh", en:"Smartphone",  img:"assets/cam/smartphone.jpg", icon:"⌖", desc:"Chụp tự nhiên, cảm giác authentic, phong cách social media"},
-          {vi:"Máy DSLR",              en:"DSLR",         img:"assets/cam/dslr.jpg",       icon:"⌖", desc:"Chất lượng cao, kiểm soát sâu, phù hợp studio và ngoài trời"},
-          {vi:"Máy Mirrorless",        en:"Mirrorless",   img:"assets/cam/mirrorless.jpg", icon:"⌖", desc:"Nhỏ gọn, hiện đại, chất lượng tương đương DSLR"},
+          {vi:"Điện thoại thông minh", en:"candid mobile phone camera",  img:"assets/cam/smartphone.jpg", icon:"⌖", desc:"Chụp tự nhiên, cảm giác authentic, phong cách social media"},
+          {vi:"Máy DSLR",              en:"Realistic candid photography",         img:"assets/cam/dslr.jpg",       icon:"⌖", desc:"Chất lượng cao, kiểm soát sâu, phù hợp studio và ngoài trời"},
+          {vi:"Máy Mirrorless",        en:"Natural handheld photography",   img:"assets/cam/mirrorless.jpg", icon:"⌖", desc:"Nhỏ gọn, hiện đại, chất lượng tương đương DSLR"},
         ]
       },
       {
@@ -835,7 +846,13 @@ function buildPrompt(){
   if(s.lighting) parts.push(s.lighting+",");
   // Camera
   const cam=[];
-  if(s.cameraType) cam.push(s.cameraType + " camera");
+  if(s.cameraType) {
+    if (s.cameraType.toLowerCase().includes("photography") || s.cameraType.toLowerCase().includes("camera")) {
+      cam.push(s.cameraType);
+    } else {
+      cam.push(s.cameraType + " camera");
+    }
+  }
   if(s.lens) cam.push(s.lens + " lens");
   if(s.shotType) cam.push(s.shotType);
   if(s.cameraAngle) cam.push(s.cameraAngle);
@@ -868,7 +885,9 @@ function buildJsonPrompt() {
   
   const skinTone = s.skin || "Fair, natural skin tone.";
   const skinTexture = s.skinDetail || "Smooth, natural skin texture with visible pores.";
-  const lightEffect = s.lighting ? "Highlights on skin matching " + s.lighting : "Soft ambient shadows and highlights.";
+  const lightEffect = s.lighting 
+    ? "Natural shadows and realistic skin highlights matching " + s.lighting 
+    : "Natural shadows and realistic skin highlights.";
 
   const hairStyleStr = s.hairStyle || "Long straight hair.";
   const hairColorStr = s.hairColor || "Dark brown/black.";
@@ -883,17 +902,20 @@ function buildJsonPrompt() {
 
   const poseStr = s.pose || "Standing naturally, relaxed posture.";
 
-  const camStyle = s.cameraType || "Smartphone digital camera.";
+  const camStyle = s.cameraType || "Realistic candid photography.";
   const camAngle = s.cameraAngle || "Eye-level neutral shot.";
   const shotTypeStr = s.shotType || "Medium portrait shot.";
   
   const camEffectsStr = s.cameraEffects || "Digital clarity with natural noise.";
-  const lightStr = s.lighting || "Soft natural ambient lighting.";
+  const lightStr = s.lighting || "Direct natural daylight, crisp lighting, balanced contrast.";
 
-  const dofStr = (s.cameraEffects && (s.cameraEffects.includes("bokeh") || s.cameraEffects.includes("depth"))) ||
-                 (s.lens && (s.lens.includes("85mm") || s.lens.includes("50mm") || s.lens.includes("135mm"))) 
-                 ? "shallow depth of field, natural out-of-focus background blur." 
-                 : "Moderate depth of field, keeping background readable.";
+  const isFullBody = s.shotType && s.shotType.toLowerCase().includes("full");
+  const dofStr = isFullBody
+    ? "Moderate depth of field, natural background separation."
+    : (((s.cameraEffects && (s.cameraEffects.includes("bokeh") || s.cameraEffects.includes("depth"))) ||
+        (s.lens && (s.lens.includes("85mm") || s.lens.includes("50mm") || s.lens.includes("135mm"))))
+       ? "shallow depth of field, natural out-of-focus background blur."
+       : "Moderate depth of field, natural background separation.");
 
   const locationSetting = s.location || "Cozy, realistic setting.";
   const aestheticStr = s.artisticStyle || "Cinematic street photography.";
@@ -1625,6 +1647,9 @@ function resolveConflict(ruleId) {
   } else if (ruleId === "smartphone_pro_lens") {
     delete s.cameraEffects;
     showToast("🔓 Đã sửa: Hủy chọn Hiệu ứng lens chuyên nghiệp (Smartphone)");
+  } else if (ruleId === "fullbody_bokeh_clash") {
+    delete s.cameraEffects;
+    showToast("🔓 Đã sửa: Hủy chọn Xóa phông mạnh (Chụp toàn thân)");
   }
   render();
 }

@@ -409,7 +409,7 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔹 Nhóm phân nhánh: Ánh sáng (ID: `lighting_group`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Nhóm cha liên kết |
 | --- | --- | --- |
-| Ánh sáng tự nhiên | `Natural Light` | `lighting` |
+| Ánh sáng tự nhiên | `Direct natural daylight, crisp lighting, balanced contrast` | `lighting` |
 | Giờ vàng | `Golden Hour` | `lighting` |
 | Ánh cửa sổ mềm | `Soft Window Light` | `lighting` |
 | Studio Softbox | `Studio Softbox` | `lighting` |
@@ -440,9 +440,9 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Loại máy (ID: `cameraType`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Điện thoại thông minh | `Smartphone` | Chụp tự nhiên, cảm giác authentic, phong cách social media |
-| Máy DSLR | `DSLR` | Chất lượng cao, kiểm soát sâu, phù hợp studio và ngoài trời |
-| Máy Mirrorless | `Mirrorless` | Nhỏ gọn, hiện đại, chất lượng tương đương DSLR |
+| Điện thoại thông minh | `candid mobile phone camera` | Chụp tự nhiên, cảm giác authentic, phong cách social media |
+| Máy DSLR | `Realistic candid photography` | Chất lượng cao, kiểm soát sâu, phù hợp studio và ngoài trời |
+| Máy Mirrorless | `Natural handheld photography` | Nhỏ gọn, hiện đại, chất lượng tương đương DSLR |
 
 ### 🔸 Nhóm thuộc tính: Loại cảnh quay (ID: `shotType`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
