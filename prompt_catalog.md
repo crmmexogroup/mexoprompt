@@ -105,11 +105,13 @@ Tài liệu này chứa danh sách toàn bộ danh mục hiển thị trên web 
 ### 🔸 Nhóm thuộc tính: Chi tiết da (ID: `skinDetail`)
 | Tiếng Việt (Hiển thị trên Web) | Tiếng Anh (Từ khóa Prompt ghép vào) | Ghi chú / Icon |
 | --- | --- | --- |
-| Mịn màng | `Smooth` | ◑ |
-| Kết cấu tự nhiên | `Natural Texture` | ◑ |
-| Lỗ chân lông | `Visible Pores` | ◑ |
-| Tàn nhang | `Freckles` | ◑ |
-| Nốt ruồi son | `Beauty Marks` | ◑ |
+| Mịn màng | `smooth clean skin` | ◑ |
+| Kết cấu tự nhiên | `raw skin texture, natural skin details, visible pores, unretouched` | ◑ |
+| Lỗ chân lông | `realistic visible skin pores, highly detailed skin texture, micro-details` | ◑ |
+| Lông tơ tự nhiên | `fine vellus hair, peach fuzz on skin, realistic skin pores` | ◑ |
+| Tàn nhang | `natural freckles on nose and cheeks` | ◑ |
+| Nốt ruồi son | `subtle beauty marks, raw skin` | ◑ |
+| Ảnh mộc (Raw) | `raw photo quality, realistic skin goosebumps and pores, unretouched` | ◑ |
 
 ---
 

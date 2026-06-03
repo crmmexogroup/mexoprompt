@@ -4,7 +4,7 @@
 // DATA
 // ═══════════════════════════════════════════════════════════════
 
-const NEGATIVE_PROMPT = "bad anatomy, extra fingers, deformed hands, deformed limbs, crossed eyes, low resolution, blurry image, watermark, text overlay, logo, duplicate body parts, bad proportions, artifacts, oversaturated colors, plastic skin, cgi appearance, male subject, masculine features, man";
+const NEGATIVE_PROMPT = "bad anatomy, extra fingers, deformed hands, deformed limbs, crossed eyes, low resolution, blurry image, watermark, text overlay, logo, duplicate body parts, bad proportions, artifacts, oversaturated colors, plastic skin, cgi appearance, airbrushed skin, 3d render, illustration, cartoon, doll-like skin, over-retouched, fake skin texture, male subject, masculine features, man";
 
 const QUALITY_LEVELS = [
   {id:"basic",    vi:"Cơ bản",        en:"Basic"},
@@ -14,10 +14,10 @@ const QUALITY_LEVELS = [
 ];
 
 const QUALITY_KEYWORDS = {
-  basic:    "photo realistic,",
-  detailed: "highly detailed, realistic skin texture, natural hair strands, depth of field,",
-  pro:      "highly detailed, realistic skin texture, natural hair strands, authentic fabric physics, depth of field, cinematic lighting, professional composition,",
-  extreme:  "hyperrealistic, extreme detail, realistic skin texture with pores, natural hair strands individually rendered, authentic fabric physics, bokeh depth of field, cinematic lighting, professional composition, realistic color science, realistic exposure, 8k quality,",
+  basic:    "raw photo, realistic skin texture,",
+  detailed: "highly detailed, raw photo, realistic skin texture with fine pores, natural hair strands, depth of field,",
+  pro:      "highly detailed, raw photo quality, realistic skin texture with visible pores, natural hair strands, authentic fabric physics, depth of field, cinematic lighting, professional composition, unretouched,",
+  extreme:  "raw photo, hyper-detailed skin texture, realistic skin pores and fine wrinkles, natural hair strands individually rendered, authentic fabric physics, bokeh depth of field, cinematic lighting, professional composition, realistic color science, realistic exposure, 35mm film grain, unretouched, candid snapshot quality,",
 };
 
 const DOUYIN_PRESET = {
@@ -155,11 +155,13 @@ const SECTIONS = [
         id:"skinDetail", vi:"Chi tiết da", en:"Skin Detail",
         multi:false,
         items:[
-          {vi:"Mịn màng",       en:"Smooth",          img:"", icon:"◑"},
-          {vi:"Kết cấu tự nhiên",en:"Natural Texture", img:"", icon:"◑"},
-          {vi:"Lỗ chân lông",   en:"Visible Pores",   img:"", icon:"◑"},
-          {vi:"Tàn nhang",      en:"Freckles",        img:"", icon:"◑"},
-          {vi:"Nốt ruồi son",   en:"Beauty Marks",    img:"", icon:"◑"},
+          {vi:"Mịn màng",       en:"smooth clean skin",          img:"", icon:"◑"},
+          {vi:"Kết cấu tự nhiên",en:"raw skin texture, natural skin details, visible pores, unretouched", img:"", icon:"◑"},
+          {vi:"Lỗ chân lông",   en:"realistic visible skin pores, highly detailed skin texture, micro-details",   img:"", icon:"◑"},
+          {vi:"Lông tơ tự nhiên",en:"fine vellus hair, peach fuzz on skin, realistic skin pores", img:"", icon:"◑"},
+          {vi:"Tàn nhang",      en:"natural freckles on nose and cheeks",        img:"", icon:"◑"},
+          {vi:"Nốt ruồi son",   en:"subtle beauty marks, raw skin",    img:"", icon:"◑"},
+          {vi:"Ảnh mộc (Raw)",  en:"raw photo quality, realistic skin goosebumps and pores, unretouched", img:"", icon:"◑"}
         ]
       },
     ]
